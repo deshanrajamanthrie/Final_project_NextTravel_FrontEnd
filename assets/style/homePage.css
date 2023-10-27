@@ -1,0 +1,63 @@
+#Home-Page-1stPage {
+    width: 100vw;
+    height: 77vh;
+}
+
+.bg-Image {
+    width: 100vw;
+    height: 100%;
+    background-image: url("../img/statistics-cover-new.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-description {
+    width: 100%;
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px #161513;;
+    opacity: 0.8;
+}
+
+.home-description > p {
+    margin-top: 50px;
+}
+
+.register-button {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-button > div {
+    width: 200px;
+    height: 50px;
+   /* border: 1px solid;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #1A2B48;
+    cursor: pointer;
+}
+div > a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.register-button>div:hover{
+    background-color: #0C8CE9
+}
