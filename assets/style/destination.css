@@ -1,0 +1,28 @@
+#destination-thirdPage {
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5F7FA;
+    margin-top: 56px;
+}
+
+#destination-thirdPage > div {
+    display: flex;
+    width: 80%;
+      height: 15%;
+  /*  background-color: #0b5ed7;*/
+    margin-top: 20px;
+
+    justify-content: center;
+    align-items: start;
+}
+
+#destination-thirdPage > div > p {
+    font-family: monospace;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
