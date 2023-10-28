@@ -26,3 +26,92 @@
     font-weight: bold;
 }
 
+.destinationType{
+    /*border: 1px solid;*/
+    width: 66%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(209px, auto));
+    grid-gap: 20px 31px;
+}
+.destinationType div{
+    /*border: 1px solid darkred;*/
+
+   /* box-shadow: 2px 1.6px 7px rgb(28 23 23 / 37%);*/
+    box-shadow: 0 4px 10px rgba(0,0,0,.25);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.destinationType div:hover{
+    filter: brightness(75%)
+
+}
+
+
+
+.destination-Name{
+   /* font-size: 1.0rem;*/
+    color: #ffffff;
+    padding-top: -1px;
+    opacity: 0.9;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+.first{
+    background-image: url("../img/dalada.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.second{
+    background-image: url("../img/nineArch.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.third {
+    background-image: url("../img/polonruwa.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.forth{
+    background-image: url("../img/Galle.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.fifth{
+    background-image: url("../img/NuwaraEliya.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.six{
+    background-image: url("../img/colombo.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.seventh{
+    background-image: url("../img/anuradapura.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.eight{
+    background-image: url("../img/trinco.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nine{
+    background-image: url("../img/yalasafari.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
