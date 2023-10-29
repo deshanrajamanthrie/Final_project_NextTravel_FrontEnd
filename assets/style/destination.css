@@ -1,6 +1,6 @@
 #destination-thirdPage {
     width: 100vw;
-    height: 120vh;
+    height: 134vh;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -29,7 +29,7 @@
 .destinationType{
     /*border: 1px solid;*/
     width: 66%;
-    height: 80%;
+    height: 75%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(209px, auto));
     grid-gap: 20px 31px;
