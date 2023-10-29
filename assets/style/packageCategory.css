@@ -28,9 +28,10 @@
     font-size: 2.5rem;
     font-weight: bold;
 }
-.packages-type{
+
+.packages-type {
     position: relative;
-  /*  border: 1px solid black;*/
+    /*  border: 1px solid black;*/
     display: grid;
     width: 60%;
     height: 75%;
@@ -39,50 +40,57 @@
     bottom: 121px;
     border-radius: 6px;
 }
-.hotelImages{
+
+.hotelImages {
     /*width: max-content;*/
-     width: content-box;
+    width: content-box;
     height: content-box;
 }
-.packages-type> article{
+
+.packages-type > article {
     background-color: #E9F0F5;
     box-shadow: 1px 1px 7px #ccc;
     border-radius: 6px;
 }
-.economy-Package{
+
+.economy-Package {
     display: flex;
 }
 
 
-.e-left-pack-{
-    border-radius:6px;
+.e-left-pack- {
+    border-radius: 6px;
     width: 130%;
+
     height: 100%;
 
     background-image: url("../img/economy2.PNG");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.m-left-pack-{
+
+.m-left-pack- {
     border-radius: 6px;
-    width: 40%;
+    width: 130%;
     height: 100%;
 
     background-image: url("../img/midrange.PNG");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.l-left-pack-{
-    border-radius:6px;
-    width: 40%;
+
+.l-left-pack- {
+    border-radius: 6px;
+    width: 130%;
     height: 100%;
     background-image: url("../img/luxury.PNG");
     background-repeat: no-repeat;
     background-size: cover;
 
 }
-.s-left-pack-{
-    width: 40%;
+
+.s-left-pack- {
+    width: 130%;
     height: 100%;
     border-radius: 6px;
     background-image: url("../img/superLuxury.PNG");
@@ -90,54 +98,130 @@
     background-size: cover;
 
 }
-.right-pack{
+
+.right-pack {
     padding-left: 25px;
 }
 
+/*  add this*/
 
-.e-categoryId{
+.e-categoryId {
     font-family: fantasy;
     padding-top: 23px;
 }
-.e-categoryName{
-    font-family: monospace;
-    color: #9f0606;
+
+.e-categoryName {
+    font-family: Roboto, sans-serif;
+    color: #9b0b0b;
     font-size: 1.2rem;
+    text-transform: uppercase;
     font-weight: bold;
 }
-.description-package{
-    font-family:sans-serif;
+
+.description-package {
+    font-family: sans-serif;
     font-size: 0.8rem;
     text-align: justify;
+    z-index: 1;
 }
-.select-button{
-    /*margin: 10px;*/
-    padding: 15px 30px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
+
+.economyButton {
+    width: 122px;
+    background-color: darkred;
+    height: 36px;
+    border-radius: 5px;
+    font-size: x-small;
     color: white;
-    border-radius: 10px;
-    display: block;
-    border: 0px;
     font-weight: 700;
-    box-shadow: 0px 0px 14px -7px #f09819;
-    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
-    cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+}
+
+
+/*Mid Level*/
+.midRange-Package{
+    display: flex;
+}
+
+.m-categoryId {
+    font-family: fantasy;
+    padding-top: 23px;
+}
+
+.m-categoryName {
+    font-family: Roboto, sans-serif;
+    color: #9b0b0b;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
 
 }
-.select-button:hover{
-    background-position: right center;
-    /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
+.midRangeButton{
+    width: 122px;
+    background-color: darkred;
+    height: 36px;
+    border-radius: 5px;
+    font-size: x-small;
+    color: white;
+    font-weight: 700;
 }
-.select-button:active{
-    transform: scale(0.95);
+
+/*Luxury*/
+.luxury-Package{
+    display: flex;
 }
+
+
+.l-categoryId{
+    font-family: fantasy;
+    padding-top: 23px;
+
+}
+.l-categoryName{
+    font-family: Roboto, sans-serif;
+    color: #9b0b0b;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+
+}
+.luxuryButton{
+    width: 122px;
+    background-color: darkred;
+    height: 36px;
+    border-radius: 5px;
+    font-size: x-small;
+    color: white;
+    font-weight: 700;
+}
+
+/*Super Luxury*/
+.superLuxury-Package{
+    display: flex;
+}
+.s-categoryId{
+    font-family: fantasy;
+    padding-top: 23px;
+}
+.s-categoryName{
+    font-family: Roboto, sans-serif;
+    color: #9b0b0b;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.superluxuryButton{
+    width: 122px;
+    background-color: darkred;
+    height: 36px;
+    border-radius: 5px;
+    font-size: x-small;
+    color: white;
+    font-weight: 700;
+
+}
+
+
+
+
 
 
