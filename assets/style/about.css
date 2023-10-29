@@ -48,6 +48,8 @@
 .slImage{
     width: 80%;
     height: 100%;
+    position: relative;
+    bottom: 20px;
 }
 .ayubowan{
     font-family: monospace;
