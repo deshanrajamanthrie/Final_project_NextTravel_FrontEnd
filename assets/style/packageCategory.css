@@ -19,7 +19,9 @@
     margin-top: 20px;
     justify-content: center;
     align-items: start;
+
 }
+
 
 #package-Category > div > p {
     font-family: monospace;
@@ -30,14 +32,112 @@
     position: relative;
   /*  border: 1px solid black;*/
     display: grid;
-    width: 59%;
+    width: 60%;
     height: 75%;
     grid-template-rows: repeat(auto-fit, minmax(209px, auto));
     grid-gap: 20px 31px;
-    bottom: 55px;
+    bottom: 121px;
+    border-radius: 6px;
+}
+.hotelImages{
+    /*width: max-content;*/
+     width: content-box;
+    height: content-box;
 }
 .packages-type> article{
-
     background-color: #E9F0F5;
     box-shadow: 1px 1px 7px #ccc;
+    border-radius: 6px;
 }
+.economy-Package{
+    display: flex;
+}
+
+
+.e-left-pack-{
+    border-radius:6px;
+    width: 130%;
+    height: 100%;
+
+    background-image: url("../img/economy2.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.m-left-pack-{
+    border-radius: 6px;
+    width: 40%;
+    height: 100%;
+
+    background-image: url("../img/midrange.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.l-left-pack-{
+    border-radius:6px;
+    width: 40%;
+    height: 100%;
+    background-image: url("../img/luxury.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.s-left-pack-{
+    width: 40%;
+    height: 100%;
+    border-radius: 6px;
+    background-image: url("../img/superLuxury.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.right-pack{
+    padding-left: 25px;
+}
+
+
+.e-categoryId{
+    font-family: fantasy;
+    padding-top: 23px;
+}
+.e-categoryName{
+    font-family: monospace;
+    color: #9f0606;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.description-package{
+    font-family:sans-serif;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+.select-button{
+    /*margin: 10px;*/
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+}
+.select-button:hover{
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+.select-button:active{
+    transform: scale(0.95);
+}
+
+
