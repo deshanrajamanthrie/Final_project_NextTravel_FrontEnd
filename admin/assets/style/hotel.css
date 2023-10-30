@@ -1,0 +1,23 @@
+#hotel-1stPage {
+    position: relative;
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 100vh;
+    background-image: url("../img/Capture.PNG");
+    bottom: 146px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hotel-topic{
+    font-size: 2rem;
+    padding-left: 6px;
+    padding-top: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #041A59;
+    padding-bottom: 19px;
+}
+
+
+
+
