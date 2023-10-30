@@ -1,5 +1,5 @@
 #hotel-1stPage {
-    position: relative;
+   /* position: relative;*/
     margin-left: 200px;
     padding: 1px 16px;
     height: 100vh;
@@ -16,6 +16,38 @@
     font-weight: bold;
     color: #041A59;
     padding-bottom: 19px;
+}
+.downSection{
+    margin-top: 24px;
+    /*border: 1px solid;*/
+    height: 51vh;
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0F5D5D;
+    color: white;
+}
+.downSection{
+   /* display: block;*/
+    white-space: nowrap;
+    overflow: auto;
 }
 
 

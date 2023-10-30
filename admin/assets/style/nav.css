@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: "Lato", sans-serif;
 
+
 }
 
 .sidebar {
@@ -32,15 +33,20 @@ body {
 }
 
 
-
 @media screen and (max-width: 700px) {
     .sidebar {
         width: 100%;
         height: auto;
         position: relative;
     }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -49,37 +55,15 @@ body {
         float: none;
     }
 }
-.upNav{
-!important: ;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 199px;
-    height: 146px;
-    flex-direction: column;
-    background-color: #F1F1F1;
 
-}
-.upNav>div{
-!important: ;
+.user-image {
+    width: 80px;
+    height: 80px;
     position: relative;
-    width: 93px;
-    height: 86px;
-    border-radius: 60%;
+    top: 11px;
+}
 
-    bottom: -10px;
-}
-.upNav>p{
-    position: relative;
-    top: 20px;
-    font-family:sans-serif;
-    font-weight: bold;
-}
-.user-image{
-    width: 95px;
-    height: 88px;
-}
 .content {
     position: relative;
     margin-left: 200px;
@@ -88,3 +72,18 @@ body {
     background-color: #0a53be;
     bottom: 146px;
 }
+
+.imgbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.imgbox > p {
+    position: relative;
+    top: 13px;
+    margin-bottom: 24px;
+}
+

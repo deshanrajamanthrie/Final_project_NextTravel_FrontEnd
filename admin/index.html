@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="./assets/style/hotel.css">
 </head>
 <body>
-<header>
-    <section class="upNav">
-        <div><img  class="user-image" src="./assets/img/user.png" alt="user"></div>
-        <p>Deshan Rajamanthrie</p>
-    </section>
+
 
 </header>
 <div class="sidebar">
+    <div class="imgbox">
+        <img class="user-image" src="./assets/img/user.png" alt="user">
+        <p>Deshan Rajamanthrie</p>
+    </div>
+
     <a class="active" href="#home">Home</a>
     <a href="#hotel">Hotel</a>
     <a href="#package">Package Category</a>
@@ -30,58 +31,71 @@
 
 <main id="hotel-1stPage">
     <section>
-    <div class="hotel-topic">HOTEL MANAGE</div>
-    <div class="row">
-        <div class="col">
-            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        <div class="hotel-topic">HOTEL MANAGE</div>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Hotel Id" aria-label="Hotel Id">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Hotel Name" aria-label="Hotel Name">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Star Rate" aria-label="Star Rate">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Location" aria-label="Location">
+            </div>
         </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        <div class="row mt-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="E-Mail" aria-label="E-Mail">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Contact Num 1" aria-label="Contact Num 1">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Contact Num 2" aria-label="Contact Num 2">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Pets Allow" aria-label="Pets Allow">
+            </div>
         </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        <div class="row mt-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Opt-1  [LKR]" aria-label="Opt-1  [LKR]">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Opt-2  [LKR]" aria-label="Opt-2  [LKR]">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Opt-3  [LKR]" aria-label="Opt-3  [LKR]">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Opt-4  [LKR]" aria-label="Opt-4  [LKR]">
+            </div>
         </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-        </div>
-    </div>
-    <div class="row mt-3">
-        <div class="col">
-            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-        </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-        </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-        </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-        </div>
-    </div>
-    <div class="row mt-3">
-        <div class="col">
-            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-        </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-        </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-        </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-        </div>
-    </div>
         <div class="button-group mt-2 ">
-            <button type="button" class="btn btn-primary"style="width: 82px">Save</button>
+            <button type="button" class="btn btn-primary" style="width: 82px">Save</button>
             <button type="button" class="btn btn-success">Update</button>
             <button type="button" class="btn btn-dark">Search</button>
             <button type="button" class="btn btn-danger">Delete</button>
         </div>
     </section>
     <section class="downSection">
+        <table id="customers">
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>h</td>
+                <td>dgf</td>
+                <td>dgfd</td>
+            </tr>
 
+
+        </table>
     </section>
 </main>
 
