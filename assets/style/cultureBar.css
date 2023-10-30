@@ -1,0 +1,39 @@
+#culture-bar {
+    display: flex;
+    position: relative;
+    bottom: 128px;
+    width: 100vw;
+    height: 80vh;
+    background-color: black;
+
+}
+
+.backGround-Image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/perahara.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    justify-content: end;
+    align-items: start;
+
+
+}
+
+.backGround-Image > div {
+    width: 64%;
+    padding-top: 8px;
+    padding-right: 28px;
+    /*border: 1px solid white;*/
+}
+
+
+.about-culture {
+    font-family: system-ui;
+    font-size: 0.9rem;
+    color: white;
+    text-align: end;
+    line-height: 32px;
+}

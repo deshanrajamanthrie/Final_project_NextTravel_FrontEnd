@@ -101,6 +101,7 @@
 
 .right-pack {
     padding-left: 25px;
+    margin-right: 20px;
 }
 
 /*  add this*/
@@ -217,7 +218,6 @@
     font-size: x-small;
     color: white;
     font-weight: 700;
-
 }
 
 
