@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.hotel-topic{
+.all-topic{
     font-size: 2rem;
     padding-left: 6px;
     padding-top: 15px;
@@ -22,22 +22,22 @@
     /*border: 1px solid;*/
     height: 51vh;
 }
-#customers {
+#tbl-hotel {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
-#customers td, #customers th {
+#tbl-hotel td, #tbl-hotel th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+#tbl-hotel tr:nth-child(even){background-color: #f2f2f2;}
 
-#customers tr:hover {background-color: #ddd;}
+#tbl-hotel tr:hover {background-color: #ddd;}
 
-#customers th {
+#tbl-hotel th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;

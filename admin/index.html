@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./assets/style/nav.css">
     <link rel="stylesheet" href="./assets/style/hotel.css">
+    <link rel="stylesheet" href="./assets/style/vehicleBrand.css">
 </head>
 <body>
 
@@ -19,19 +20,19 @@
     </div>
 
     <a class="active" href="#home">Home</a>
-    <a href="#hotel">Hotel</a>
-    <a href="#package">Package Category</a>
-    <a href="#brand">Vehicle Brand</a>
-    <a href="#vehicleCategory">Vehicle Category</a>
+    <a href="#hotel">Hotel </a>
+    <a href="#brand">Vehicle Brands</a>
     <a href="#guide">Guide</a>
     <a href="#customer">Customers</a>
+    <!--<a href="#package">Package Category</a>-->
+    <a href="#vehicleCategory">Vehicle Category</a>
     <a href="#travelCategory">Travel Category</a>
 
 </div>
 
 <main id="hotel-1stPage">
     <section>
-        <div class="hotel-topic">HOTEL MANAGE</div>
+        <div class="all-topic">HOTEL MANAGE</div>
         <div class="row">
             <div class="col">
                 <input type="text" class="form-control" placeholder="Hotel Id" aria-label="Hotel Id">
@@ -82,15 +83,15 @@
         </div>
     </section>
     <section class="downSection">
-        <table id="customers">
+        <table id="tbl-hotel">
             <tr>
                 <th>Id</th>
                 <th>Name</th>
                 <th>Star Rate</th>
                 <th>Location</th>
                 <th>E-Mail</th>
-                <th>Contact Num1</th>
-                <th>Contact Num2</th>
+                <th>Contact-1</th>
+                <th>Contact-2</th>
                 <th>Pets Allow</th>
                 <th>Opt-1</th>
                 <th>Opt-2</th>
@@ -111,11 +112,84 @@
                 <td></td>
                 <td></td>
             </tr>
-
-
         </table>
     </section>
 </main>
+
+<!--VehicleBrand-->
+
+<main id="vehicle-2ndPage">
+    <section>
+        <div class="all-topic">VEHICLE MANAGE</div>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Vehicle Brand Name" aria-label="Vehicle Brand Name">
+            </div>
+            <div class="col ">
+                <input type="text" class="form-control" placeholder="Seating Capacity" aria-label="Seating Capacity">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Vehicle Qty" aria-label="Vehicle Qty">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Fuel Type" aria-label="Fuel Type">
+            </div>
+        </div>
+        <!---->
+        <div class="row mt-3">
+            <div class="col ">
+                <input type="text" class="form-control" placeholder="Fee For 1 km (LKR)" aria-label="Fee For 1 km ">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Fuel Consumption (km/l)" aria-label="Fuel Consumption km/l">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Fee For One Day (LKR)" aria-label="Fee For One Day (LKR)">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Vehicle Category" aria-label="Vehicle Category">
+            </div>
+        </div>
+    </section>
+    <div class="button-group mt-2 ">
+        <button type="button" class="btn btn-primary" style="width: 82px">Save</button>
+        <button type="button" class="btn btn-success">Update</button>
+        <button type="button" class="btn btn-dark">Search</button>
+        <button type="button" class="btn btn-danger">Delete</button>
+    </div>
+    <section class="downSection">
+        <table id="tbl-VehicleBrand">
+            <tr>
+                <th>Id</th>
+                <th>Brand</th>
+                <th>Seat </th>
+                <th>Vehicle Qty</th>
+                <th>Fuel Type</th>
+                <th>Fee For 1km</th>
+                <th>Fuel Consumption</th>
+                <th>Fee For One Day</th>
+                <th>Vehicle Category</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+        </table>
+    </section>
+
+
+</main>
+
+<!--Guide Manage-->
+<main id="guide-3rdPage"></main>
 
 
 </body>
