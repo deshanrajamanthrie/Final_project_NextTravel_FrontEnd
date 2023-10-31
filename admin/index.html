@@ -25,15 +25,15 @@
         <p>Deshan Rajamanthrie</p>
     </div>
 
-    <a class="active" href="#home">Home</a>
-    <a href="#hotel">Hotel </a>
-    <a href="#brand">Vehicle Brands</a>
-    <a href="#guide">Guide</a>
-    <a href="#customer">Customers</a>
-    <a href="#packageCategory">Package Category</a>
-    <a href="#travelCategory">Travel Category</a>
-    <a href="#VehicleCategory">Vehicle Category</a>
-    <a href="#Booking">Booking</a>
+    <a href="#home" id="home-selector">Home</a>
+    <a href="#hotel" id="hotel-selector">Hotel </a>
+    <a href="#brand" id="vehicle-selector">Vehicle Brands</a>
+    <a href="#guide" id="guide-selector">Guide</a>
+    <a href="#customer" id="customer-selector">Customers</a>
+    <a href="#packageCategory" id="package-selector">Package Category</a>
+    <a href="#travelCategory" id="travel-selector">Travel Category</a>
+    <a href="#VehicleCategory" id="vehicle-category-selector">Vehicle Category</a>
+    <a href="#Booking" id="booking-selector">Booking</a>
     <a href="#logOut">Log Out</a>
 
 </div>
@@ -322,9 +322,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td></td>
-
-                <!--   <td></td>-->
+                <td></td><!--   <td></td>-->
             </tr>
         </table>
     </section>
@@ -401,9 +399,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td></td>
-
-                <!--   <td></td>-->
+                <td></td><!--   <td></td>-->
             </tr>
         </table>
     </section>
@@ -446,16 +442,98 @@
                 <td></td>
             </tr>
         </table>
-
-
-
-
-
-
-
-
     </section>
 </main>
+
+<script src="./assets/jquery/jquery-3.6.4.min%20(1).js"></script>
+
+<script>
+    $("#hotel-selector").click(() => {
+       if($("#hotel-1stPage").css('display', 'block'))
+        $("#vehicle-2ndPage").css('display', 'none');
+        $("#guide-3rdPage").css('display', 'none');
+        $("#customers-4thPage").css('display', 'none');
+        $("#package-Category").css('display', 'none');
+        $("#travel-Category").css('display', 'none');
+        $("#vehicle-Category").css('display', 'none');
+        $("#booking-lastPage").css('display', 'none');
+    });
+
+
+    $("#vehicle-selector").click(() => {
+        $("#hotel-1stPage").css('display', 'none');
+        $("#vehicle-2ndPage").css('display', 'block');
+
+        $("#guide-3rdPage").css('display', 'none');
+        $("#customers-4thPage").css('display', 'none');
+        $("#package-Category").css('display', 'none');
+        $("#travel-Category").css('display', 'none');
+        $("#vehicle-Category").css('display', 'none');
+        $("#booking-lastPage").css('display', 'none');
+    });
+    $("#guide-selector").click(() => {
+        $("#hotel-1stPage").css('display', 'none');
+        $("#vehicle-2ndPage").css('display', 'none');
+        $("#guide-3rdPage").css('display', 'block');
+        $("#customers-4thPage").css('display', 'none');
+        $("#package-Category").css('display', 'none');
+        $("#travel-Category").css('display', 'none');
+        $("#vehicle-Category").css('display', 'none');
+        $("#booking-lastPage").css('display', 'none');
+    });
+    $("#customer-selector").click(() => {
+        $("#hotel-1stPage").css('display', 'none');
+        $("#vehicle-2ndPage").css('display', 'none');
+        $("#guide-3rdPage").css('display', 'none');
+        $("#customers-4thPage").css('display', 'block');
+        $("#package-Category").css('display', 'none');
+        $("#travel-Category").css('display', 'none');
+        $("#vehicle-Category").css('display', 'none');
+        $("#booking-lastPage").css('display', 'none');
+    });
+    $("#package-selector").click(() => {
+        $("#hotel-1stPage").css('display', 'none');
+        $("#vehicle-2ndPage").css('display', 'none');
+        $("#guide-3rdPage").css('display', 'none');
+        $("#customers-4thPage").css('display', 'none');
+        $("#package-Category").css('display', 'block');
+        $("#travel-Category").css('display', 'none');
+        $("#vehicle-Category").css('display', 'none');
+        $("#booking-lastPage").css('display', 'none');
+    });
+    $("#travel-selector").click(() => {
+        $("#hotel-1stPage").css('display', 'none');
+        $("#vehicle-2ndPage").css('display', 'none');
+        $("#guide-3rdPage").css('display', 'none');
+        $("#customers-4thPage").css('display', 'none');
+        $("#package-Category").css('display', 'none');
+        $("#travel-Category").css('display', 'block');
+        $("#vehicle-Category").css('display', 'none');
+        $("#booking-lastPage").css('display', 'none');
+    });
+    $("#vehicle-category-selector").click(() => {
+        $("#hotel-1stPage").css('display', 'none');
+        $("#vehicle-2ndPage").css('display', 'none');
+        $("#guide-3rdPage").css('display', 'none');
+        $("#customers-4thPage").css('display', 'none');
+        $("#package-Category").css('display', 'none');
+        $("#travel-Category").css('display', 'none');
+        $("#vehicle-Category").css('display', 'block');
+        $("#booking-lastPage").css('display', 'none');
+    });
+    $("#booking-selector").click(() => {
+        $("#hotel-1stPage").css('display', 'none');
+        $("#vehicle-2ndPage").css('display', 'none');
+        $("#guide-3rdPage").css('display', 'none');
+        $("#customers-4thPage").css('display', 'none');
+        $("#package-Category").css('display', 'none');
+        $("#travel-Category").css('display', 'none');
+        $("#vehicle-Category").css('display', 'none');
+        $("#booking-lastPage").css('display', 'block');
+    });
+
+
+</script>
 
 
 </body>
