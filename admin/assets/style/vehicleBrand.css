@@ -15,7 +15,7 @@
     width: 100%;
 }
 
-#tbl-VehicleBrand td, #tbl-hotel th {
+#tbl-VehicleBrand td, #tbl-VehicleBrand th {
     border: 1px solid #ddd;
     padding: 8px;
 }
