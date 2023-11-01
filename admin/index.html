@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="./assets/style/travelCategory.css">
     <link rel="stylesheet" href="./assets/style/vehicleCategory.css">
     <link rel="stylesheet" href="./assets/style/booking.css">
+
+
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -43,48 +47,57 @@
         <div class="all-topic">HOTEL MANAGE</div>
         <div class="row">
             <div class="col">
-                <input type="text" class="form-control" placeholder="Hotel Id" aria-label="Hotel Id">
+                <input type="text" id="txtHotel-id" class="form-control" placeholder="Hotel Id" aria-label="Hotel Id">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Hotel Name" aria-label="Hotel Name">
+                <input type="text" id="txtHotel-name" class="form-control" placeholder="Hotel Name"
+                       aria-label="Hotel Name">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Star Rate" aria-label="Star Rate">
+                <input type="text" id="txtStarRate" class="form-control" placeholder="Star Rate" aria-label="Star Rate">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Location" aria-label="Location">
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="E-Mail" aria-label="E-Mail">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Contact Num 1" aria-label="Contact Num 1">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Contact Num 2" aria-label="Contact Num 2">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Pets Allow" aria-label="Pets Allow">
+                <input type="text" id="txtHotelLocation" class="form-control" placeholder="Location"
+                       aria-label="Location">
             </div>
         </div>
         <div class="row mt-3">
             <div class="col">
-                <input type="text" class="form-control" placeholder="Opt-1  [LKR]" aria-label="Opt-1  [LKR]">
+                <input type="text" id="txtHotelEmail" class="form-control" placeholder="E-Mail" aria-label="E-Mail">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Opt-2  [LKR]" aria-label="Opt-2  [LKR]">
+                <input type="text" id="txtContactNum1" class="form-control" placeholder="Contact Num 1"
+                       aria-label="Contact Num 1">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Opt-3  [LKR]" aria-label="Opt-3  [LKR]">
+                <input type="text" id="txtContactNum2" class="form-control" placeholder="Contact Num 2"
+                       aria-label="Contact Num 2">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Opt-4  [LKR]" aria-label="Opt-4  [LKR]">
+                <input type="text" id="txtPetsAllow" class="form-control" placeholder="Pets Allow"
+                       aria-label="Pets Allow">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <input type="text" id="txtHotelOp1" class="form-control" placeholder="Opt-1  [LKR]"
+                       aria-label="Opt-1  [LKR]">
+            </div>
+            <div class="col">
+                <input type="text" id="txtHotelOp2" class="form-control" placeholder="Opt-2  [LKR]"
+                       aria-label="Opt-2  [LKR]">
+            </div>
+            <div class="col">
+                <input type="text" id="txtHotelOp3" class="form-control" placeholder="Opt-3  [LKR]"
+                       aria-label="Opt-3  [LKR]">
+            </div>
+            <div class="col">
+                <input type="text" id="txtHotelOp4" class="form-control" placeholder="Opt-4  [LKR]"
+                       aria-label="Opt-4  [LKR]">
             </div>
         </div>
         <div class="button-group mt-2 ">
-            <button type="button" class="btn btn-primary" style="width: 80px">Save</button>
+            <button id="btn-save-hotel" type="button" class="btn btn-primary" style="width: 80px">Save</button>
             <button type="button" class="btn btn-success">Update</button>
             <button type="button" class="btn btn-dark">Search</button>
             <button type="button" class="btn btn-danger">Delete</button>
@@ -106,20 +119,22 @@
                 <th>Opt-3</th>
                 <th>Opt-4</th>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+            <tbody id="tbl-hotel-body">
+            <!--<tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+               </tr>-->
+            </tbody>
         </table>
     </section>
 </main>
@@ -380,27 +395,37 @@
         <div class="all-topic">VEHICLE CATEGORY</div>
         <div class="row">
             <div class="col w-auto">
-                <input type="text" class="form-control" placeholder="Vehicle Category"
+                <input type="text" class="form-control" id="txtVehicleCategoryId" placeholder="Vehicle Category Id"
+                       aria-label="Vehicle Category Id" disabled>
+
+            </div>
+            <div class="col w-auto">
+                <input type="text" class="form-control" id="txtVehicleCategoryType" placeholder="Vehicle Category"
                        aria-label="Vehicle Category">
+                <p id="error-type-category" class="letters-errs-define error-display"></p>
+
             </div>
             <div class="col">
-                <button type="button" class="btn btn-primary" style="width: 80px">Save</button>
-                <button type="button" class="btn btn-success">Update</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+                <button type="button" class="btn btn-primary" id="btn-save-vehicleCategory" style="width: 80px">Save
+                </button>
+                <button type="button" class="btn btn-success" id="btn-update-vehicleCategory">Update</button>
+                <button type="button" class="btn btn-danger" id="btn-delete-vehicleCategory">Delete</button>
 
             </div>
         </div>
     </section>
-    <section class="downSection">
+    <section class="downSection mt-5">
         <table id="tbl-vehicleCategory">
             <tr>
                 <th>Package Id</th>
                 <th>Package Name</th>
             </tr>
+            <tbody id="tbl-vehicleCategory-tbody">
             <tr>
                 <td></td>
                 <td></td><!--   <td></td>-->
             </tr>
+            </tbody>
         </table>
     </section>
 </main>
@@ -447,10 +472,14 @@
 
 <script src="./assets/jquery/jquery-3.6.4.min%20(1).js"></script>
 
+<script type="module" src="./controller/HotelController.js"></script>
+
+<script type="module" src="./controller/VehicleCategoryController.js"></script>
+
 <script>
     $("#hotel-selector").click(() => {
-       if($("#hotel-1stPage").css('display', 'block'))
-        $("#vehicle-2ndPage").css('display', 'none');
+        if ($("#hotel-1stPage").css('display', 'block'))
+            $("#vehicle-2ndPage").css('display', 'none');
         $("#guide-3rdPage").css('display', 'none');
         $("#customers-4thPage").css('display', 'none');
         $("#package-Category").css('display', 'none');
