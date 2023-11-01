@@ -219,34 +219,37 @@
         <div class="all-topic">GUIDE MANAGE</div>
         <div class="row">
             <div class="col">
-                <input type="text" class="form-control" placeholder="Vehicle Brand Name"
-                       aria-label="Vehicle Brand Name">
+                <input type="text" class="form-control" id="txtGuideId" placeholder="Guide Id"
+                       aria-label="Guide Id">
             </div>
             <div class="col ">
-                <input type="text" class="form-control" placeholder="Seating Capacity" aria-label="Seating Capacity">
+                <input type="text" class="form-control" id="txtGuideName" placeholder="Guide Name"
+                       aria-label="Guide Name">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Vehicle Qty" aria-label="Vehicle Qty">
+                <input type="text" class="form-control" id="txtGuideNic" placeholder="Guide NIC" aria-label="Guide NIC">
             </div>
         </div>
         <!--2-->
         <div class="row mt-3">
             <div class="col">
-                <input type="text" class="form-control" placeholder="Vehicle Brand Name"
-                       aria-label="Vehicle Brand Name">
+                <input type="text" class="form-control" placeholder="Contact Number" id="txtGuideNum1"
+                       aria-label="Contact Number">
             </div>
             <div class="col ">
-                <input type="text" class="form-control" placeholder="Seating Capacity" aria-label="Seating Capacity">
+                <input type="text" class="form-control" placeholder="Guide Address" id="txtGuideAddress"
+                       aria-label="Guide Address">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Vehicle Qty" aria-label="Vehicle Qty">
+                <input type="text" class="form-control" placeholder="Guide Payment" id="txtGuideValue"
+                       aria-label="Guide Payment">
             </div>
         </div>
         <div class="button-group mt-2 ">
-            <button type="button" class="btn btn-primary" style="width: 80px">Save</button>
-            <button type="button" class="btn btn-success">Update</button>
-            <button type="button" class="btn btn-dark">Search</button>
-            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="button" id="btn-saveGuide" class="btn btn-primary" style="width: 80px">Save</button>
+            <button type="button" id="btn-updateGuide" class="btn btn-success">Update</button>
+            <button type="button" id="btn-searchGuide" class="btn btn-dark">Search</button>
+            <button type="button" id="btn-deleteGuide" class="btn btn-danger">Delete</button>
         </div>
     </section>
     <section class="downSection">
@@ -260,6 +263,7 @@
                 <th>Payment For 1 day</th>
 
             </tr>
+            <tbody id="tbl-Guide-tbody">
             <tr>
                 <td></td>
                 <td></td>
@@ -268,6 +272,7 @@
                 <td></td>
                 <td></td>
             </tr>
+            </tbody>
         </table>
     </section>
 </main>
@@ -480,6 +485,7 @@
 
 <script type="module" src="./controller/PackageCategoryController.js"></script>
 <script type="module" src="./controller/VehicleCategoryController.js"></script>
+<script type="module" src="./controller/GuideController.js"></script>
 
 <script>
     $("#hotel-selector").click(() => {
