@@ -2,14 +2,88 @@ import {Guide} from "../model/Guide.js";
 
 export class GuideController {
 
+
     constructor() {
         this.loadAllGuide();
-        $("#btn-Package-save").click(this.saveGuide.bind(this));
+        $("#btn-saveGuide").click(this.saveGuide.bind(this));
+        $("#btn-deleteGuide").click(this.deleteGuide.bind(this));
+        $("#btn-updateGuide").click(this.updateGuide.bind(this));
+        $("#btn-searchGuide").click(this.searchGuide.bind(this));
 
     }
 
-
     static url = "http://deshanz-vivobook:8080/api/v1/mainGuide";
+
+    searchGuide() {
+        $.ajax({
+            url: GuideController.url + "?id=" + $("#txtGuideId").val(),
+            method: "GET",
+            dataType: "json",
+            success: function (resp) {
+                $("#txtGuideId").val(resp.data.id);
+                $("#txtGuideName").val(resp.data.name);
+                $("#txtGuideNic").val(resp.data.nic);
+                $("#txtGuideNum1").val(resp.data.num1);
+                $("#txtGuideAddress").val(resp.data.address);
+                $("#txtGuideValue").val(resp.data.value);
+
+
+            }
+
+
+        })
+    }
+
+
+
+    updateGuide() {
+        let id = $("#txtGuideId").val();
+        let name = $("#txtGuideName").val();
+        let nic = $("#txtGuideNic").val();
+        let num1 = $("#txtGuideNum1").val();
+        let address = $("#txtGuideAddress").val();
+        let value = $("#txtGuideValue").val();
+        let guide = new Guide(id, name, nic, Number.parseInt(num1), address, Number.parseInt(value));
+
+        $.ajax({
+            url: GuideController.url,
+            method: "PUT",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify(guide),
+            success: function (resp) {
+                if (resp.code === 200) {
+                    Swal.fire(resp.massage);
+                } else {
+                    Swal.fire(resp.massage)
+                }
+
+            }
+
+        });
+
+        this.loadAllGuide();
+        this.clearTextField();
+
+    }
+
+    deleteGuide() {
+        $.ajax({
+            url: GuideController.url + "?id=" + $("#txtGuideId").val(),
+            method: "DELETE",
+            dataType: "json",
+            success: function (resp) {
+                if (resp.code === 200) {
+                    Swal.fire(resp.massage);
+                } else {
+                    Swal.fire(resp.massage);
+                }
+            }
+
+        });
+        this.loadAllGuide();
+        this.clearTextField();
+    }
 
     saveGuide() {
         let id = $("#txtGuideId").val();
@@ -18,8 +92,26 @@ export class GuideController {
         let num1 = $("#txtGuideNum1").val();
         let address = $("#txtGuideAddress").val();
         let value = $("#txtGuideValue").val();
+        let guide = new Guide(id, name, nic, Number.parseInt(num1), address, Number.parseInt(value));
+
+        console.log(guide)
 
 
+        $.ajax({
+            url: GuideController.url,
+            method: "POST",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify(guide),
+            success: function (resp) {
+                if (resp.code === 200) {
+                    Swal.fire(resp.massage)
+                } else {
+                    Swal.fire(resp.massage);
+                }
+            }
+        });
+        this.clearTextField();
 
     }
 
@@ -54,6 +146,18 @@ export class GuideController {
             }
         })
     }
+
+    clearTextField() {
+        $("#txtGuideId").val("");
+        $("#txtGuideName").val("");
+        $("#txtGuideNic").val("");
+        $("#txtGuideNum1").val("");
+        $("#txtGuideAddress").val("");
+        $("#txtGuideValue").val("");
+
+    }
+
+
 }
 
 new GuideController();
