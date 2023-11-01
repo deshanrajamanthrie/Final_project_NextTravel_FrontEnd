@@ -5,10 +5,63 @@ export class HotelController {
     constructor() {
         this.loadAllHotels();
         $("#btn-save-hotel").click(this.saveHotel.bind(this));
-        $("#btn-deleteGuide").click(this.deleteHotel.bind(this));
+        $("#btn-delete-hotel").click(this.deleteHotel.bind(this));
+        $("#btn-update-hotel").click(this.updateHotel.bind(this));
     }
 
     static url = "http://deshanz-vivobook:8080/api/v1/hotel/consume";
+
+    updateHotel() {
+        let id = $("#txtHotel-id").val();
+        let name = $("#txtHotel-name").val();
+        let starRate = $("#txtStarRate").val();
+        let location = $("#txtHotelLocation").val();
+        let email = $("#txtHotelEmail").val();
+        let contactNum1 = $("#txtContactNum1").val();
+        let contactNum2 = $("#txtContactNum2").val();
+        let pets = $("#txtPetsAllow").val();
+        let op1 = $("#txtHotelOp1").val();
+        let op2 = $("#txtHotelOp2").val();
+        let op3 = $("#txtHotelOp3").val();
+        let op4 = $("#txtHotelOp4").val();
+
+
+        let Hotel = {     //create Literal Base Object
+            id: id,
+            name: name,
+            starRate: Number.parseInt(starRate),
+            location: location,
+            contacts: [{
+                email: email,
+                contactNum1: contactNum1,
+                contactNum2: contactNum2
+            }
+            ],
+            pets: pets,
+            op1: op1,
+            op2: op2,
+            op3: op3,
+            op4: op4
+
+        }
+        $.ajax({
+            url: HotelController.url,
+            method: "PUT",
+            contentType: "application/json",
+            data: JSON.stringify(Hotel),   //java Script obj convert To Json Object
+            success: function (resp) {
+                if (resp.code === 200) {
+                    Swal.fire(resp.massage);
+                } else {
+                    Swal.fire(resp.massage);
+                }
+            }
+        });
+        this.clearTextField();
+        this.loadAllHotels();
+
+    }
+
 
     deleteHotel() {
         let id = $("#txtHotel-id").val();
