@@ -1,11 +1,11 @@
 #package-Category {
     width: 100vw;
-    height: 200vh;
+    height: 190vh;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    /*background-color: #F5F7FA;*/
+    /* background-color: #F5F7FA; */
     margin-top: 56px;
 }
 
@@ -34,7 +34,7 @@
     /*  border: 1px solid black;*/
     display: grid;
     width: 60%;
-    height: 75%;
+    height: 85%;
     grid-template-rows: repeat(auto-fit, minmax(209px, auto));
     grid-gap: 20px 31px;
     bottom: 121px;

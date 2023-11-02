@@ -1,7 +1,7 @@
 #culture-bar {
     display: flex;
     position: relative;
-    bottom: 128px;
+   /* bottom: 128px;*/
     width: 100vw;
     height: 80vh;
     background-color: black;
