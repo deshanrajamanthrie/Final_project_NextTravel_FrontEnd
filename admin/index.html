@@ -143,45 +143,57 @@
 <main id="vehicle-2ndPage">
     <section>
         <div class="all-topic">VEHICLE MANAGE</div>
+
         <div class="row">
             <div class="col">
-                <input type="text" class="form-control" placeholder="Vehicle Brand Name"
+                <input type="text" id="txtbrandName" class="form-control" placeholder="Vehicle Brand Name"
                        aria-label="Vehicle Brand Name">
             </div>
             <div class="col ">
-                <input type="text" class="form-control" placeholder="Seating Capacity" aria-label="Seating Capacity">
+                <input type="text" id="txtseatCapacity" class="form-control" placeholder="Seating Capacity"
+                       aria-label="Seating Capacity">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Vehicle Qty" aria-label="Vehicle Qty">
+                <input type="text" id="txtvehicleQty" class="form-control" placeholder="Vehicle Qty"
+                       aria-label="Vehicle Qty">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Fuel Type" aria-label="Fuel Type">
+                <input type="text" id="txtfuelType" class="form-control" placeholder="Fuel Type" aria-label="Fuel Type">
             </div>
         </div>
         <!---->
         <div class="row mt-3">
             <div class="col ">
-                <input type="text" class="form-control" placeholder="Fee For 1 km (LKR)" aria-label="Fee For 1 km ">
+                <input type="text" class="form-control" id="txtfee1km" placeholder="Fee For 1 km (LKR)"
+                       aria-label="Fee For 1 km ">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Fuel Consumption (km/l)"
+                <input type="text" id="txtfuelConsumption" class="form-control" placeholder="Fuel Consumption (km/l)"
                        aria-label="Fuel Consumption km/l">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Fee For One Day (LKR)"
+                <input type="text" class="form-control" id="txtfeeOneday" placeholder="Fee For One Day (LKR)"
                        aria-label="Fee For One Day (LKR)">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Vehicle Category" aria-label="Vehicle Category">
+                <input type="text" class="form-control" id="txtvehicleCategory" placeholder="Vehicle Category"
+                       aria-label="Vehicle Category">
             </div>
         </div>
     </section>
-    <div class="button-group mt-2 ">
-        <button type="button" class="btn btn-primary" style="width: 80px">Save</button>
-        <button type="button" class="btn btn-success">Update</button>
-        <button type="button" class="btn btn-dark">Search</button>
-        <button type="button" class="btn btn-danger">Delete</button>
-    </div>
+    <section class="row">
+        <div class="col mt-3">
+            <input type="text" class="form-control" style="border: 2px solid #0707ea" id="txtvehicleIdsearch"
+                   placeholder="Search Vehicle"
+                   aria-label="Search Vehicle">
+        </div>
+        <div class="button-group mt-3 col">
+            <button type="button" id="btn-save-vehicle" class="btn btn-primary" style="width: 80px">Save</button>
+            <button type="button" id="btn-update-vehicle" class="btn btn-success">Update</button>
+            <button type="button" id="btn-search-vehicle" class="btn btn-dark">Search</button>
+            <button type="button" id="btn-delete-vehicle" class="btn btn-danger">Delete</button>
+        </div>
+    </section>
     <section class="downSection">
         <table id="tbl-VehicleBrand">
             <tr>
@@ -190,11 +202,12 @@
                 <th>Seat</th>
                 <th>Vehicle Qty</th>
                 <th>Fuel Type</th>
-                <th>Fee For 1km</th>
-                <th>Fuel Consumption</th>
+                <th>Fee For 1km [LKR]</th>
+                <th>Fuel Consumption[km/l]</th>
                 <th>Fee For One Day</th>
-                <th>Vehicle Category</th>
+                <th>Vehicle Category ID</th>
             </tr>
+            <tbody id="tbl-VehicleBrand-tbody">
             <tr>
                 <td></td>
                 <td></td>
@@ -205,8 +218,8 @@
                 <td></td>
                 <td></td>
                 <td></td>
-
             </tr>
+            </tbody>
         </table>
     </section>
 
@@ -284,12 +297,12 @@
         </div>
         <div class="row">
             <div class="col w-auto">
-                <input type="text" class="form-control" placeholder="Search Customer"
+                <input type="text" id="txtCustomerId" class="form-control" placeholder="Search Customer"
                        aria-label="Search Customer">
 
             </div>
             <div class="col">
-                <button type="button" class="btn btn-dark">Search</button>
+                <button type="button" id="btn-customer-search-" class="btn btn-dark">Search</button>
             </div>
         </div>
     </section>
@@ -301,20 +314,22 @@
                 <th>NIC</th>
                 <th>Address</th>
                 <th>E-Mail</th>
-                <!-- <th></th>-->
 
             </tr>
+            <tbody id="tbl-customer-body">
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <!--   <td></td>-->
             </tr>
+            </tbody>
         </table>
     </section>
 </main>
+
+
 <main id="package-Category">
     <section>
         <div class="all-topic">PACKAGE CATEGORY</div>
@@ -362,7 +377,7 @@
                        aria-label="Search Travel">
             </div>
             <div class="col">
-                <button type="button" class="btn btn-dark">Search</button>
+                <button type="button" id="btn-travel-search" class="btn btn-dark">Search</button>
             </div>
         </div>
     </section>
@@ -381,6 +396,7 @@
                 <th>Payment</th>
                 <th>Package Category</th>
             </tr>
+            <tbody id="tbl-travel-tbody">
             <tr>
                 <td></td>
                 <td></td>
@@ -393,7 +409,9 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
             </tr>
+            </tbody>
         </table>
     </section>
 </main>
@@ -443,11 +461,11 @@
         <div class="all-topic">BOOKING SECTION</div>
         <div class="row">
             <div class="col w-auto">
-                <input type="text" class="form-control" placeholder="Search Booking"
+                <input type="text" class="form-control" placeholder="Search Booking" id="txt-searchBoooking"
                        aria-label="Search Booking">
             </div>
             <div class="col">
-                <button type="button" class="btn btn-dark">Search</button>
+                <button type="button" id="btn-search-booking" class="btn btn-dark">Search</button>
             </div>
         </div>
     </section>
@@ -464,6 +482,7 @@
                 <th>Payment Status</th>
                 <th>User</th>
             </tr>
+            <tbody id="tbl-booking-tbody">
             <tr>
                 <td></td>
                 <td></td>
@@ -475,6 +494,7 @@
                 <td></td>
                 <td></td>
             </tr>
+            </tbody>
         </table>
     </section>
 </main>
@@ -482,10 +502,15 @@
 <script src="./assets/jquery/jquery-3.6.4.min%20(1).js"></script>
 
 <script type="module" src="./controller/HotelController.js"></script>
+<script type="module" src="./controller/CustomerController.js"></script>
 
 <script type="module" src="./controller/PackageCategoryController.js"></script>
 <script type="module" src="./controller/VehicleCategoryController.js"></script>
+<script type="module" src="./controller/TravelController.js"></script>
 <script type="module" src="./controller/GuideController.js"></script>
+<script type="module" src="./controller/BookingController.js"></script>
+<script type="module" src="./controller/VehicleBrandController.js"></script>
+
 
 <script>
     $("#hotel-selector").click(() => {
