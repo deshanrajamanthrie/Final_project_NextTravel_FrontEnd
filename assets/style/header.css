@@ -11,7 +11,7 @@ body {
     /* background-color: #1A2B48; */
     flex-direction: row;
     /* position: fixed; */
-    box-shadow: 1px 1px 7px #ccc;
+    box-shadow: 0 0 5px 1px #595454;
 }
 
 #top-section {
