@@ -60,8 +60,7 @@
         <section class="register-button">
             <div>
                 <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width: auto">RegisterUser-->
-                <button onclick="document.getElementById('id01').style.display='block'" style="width:300px;">REGISTER
-                    USER
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:300px;">LOGIN USER
                 </button>
 
             </div>
@@ -92,8 +91,8 @@
 
                 So, please log into “Lanka Travel Guide” and plan your next holiday in this wonderful island nation of
                 Sri Lanka.</p>
-            <a href="https://maps.google.com" class="link-hrefMap">
-                <button class="googleMap">Try To Google Map</button>
+            <a target="_blank" href="https://maps.google.com" class="link-hrefMap">
+                <button  class="googleMap">Try To Google Map</button>
             </a>
 
         </aside>
@@ -261,20 +260,20 @@
 
 <div id="id01" class="modal">
 
-    <form class="modal-content animate" action="/action_page.php" method="post">
+    <form class="modal-content animate" action="/action_page.php" >
         <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
             <img src="./assets/img/profile%20(1).png" alt="Avatar" class="avatar">
         </div>
 
         <div class="container">
-            <label for="txt-login-email"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" id="txt-login-email" name="k" required>
+            <label for="txt-login-email"><b>E Mail</b></label>
+            <input type="text" placeholder="Enter Your E Mail" id="txt-login-email" name="k" required>
 
             <label for="txt-login-psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" id="txt-login-psw" name="psw" required>
+            <input type="password" placeholder="Enter Your Password" id="txt-login-psw" name="psw" required>
 
-            <button type="submit">Login</button>
+            <button  id="btn-login-user" type="button">Login</button>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
