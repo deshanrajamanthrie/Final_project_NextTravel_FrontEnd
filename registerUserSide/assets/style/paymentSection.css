@@ -1,0 +1,202 @@
+.payment-section {
+    position: relative;
+    top: 16px;
+    width: 100%;
+    height: 40%;
+    margin-bottom: -17px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.star-selector{
+    margin-left: 15px;
+}
+
+
+
+.line-bar {
+    width: 80%;
+    height: 1px;
+    background-color: #dedddd;
+}
+
+.payment-area {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 72%;
+    flex-direction: column;
+    box-shadow: 1.5px 1.5px 5px rgb(28 23 23 / 37%);
+    /* border: 1px solid rgba(2, 2, 82, 0.92);*/
+}
+
+.topic-payment {
+    /*border: 1px solid;*/
+    height: 31px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.selected-bar {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: smaller;
+}
+
+/*==============ATM=======*/
+.atm-Card-Access {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    top: 102px;
+    left: 281px;
+    flex-direction: column;
+    height: 300px;
+    box-shadow: 1.5px 1.5px 5px rgb(28 23 23 / 37%);
+}
+
+.atm-Card-Access > .src-class {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.payment-btn {
+    margin-top: 1px;
+    width: 145px;
+    height: 33px;
+    border: none;
+    border-radius: 9px;
+    background-color: #c70718;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 1.0rem;
+    letter-spacing: 2px;
+    margin-left: 72px;
+    box-shadow: 1.5px 1.5px 5px rgb(28 23 23 / 37%);
+}
+
+.payment-btn:hover {
+    background-color: #f82236;
+    font-size: large;
+}
+
+.btn-Travel-conform{
+    width: 130px;
+    height: 45px;
+    border-radius: 6px;
+    background-color: #3450c7;
+    color: white;
+    border: none;
+    box-shadow: 1.5px 1.5px 5px rgb(28 23 23 / 37%);
+}
+.btn-Travel-conform:hover{
+    background-color: #0728b0;
+}
+
+
+.btn-total-conform{
+    width: 130px;
+    height: 45px;
+    border-radius: 6px;
+    background-color: #4B9651;
+    color: white;
+    border: none;
+    box-shadow: 1.5px 1.5px 5px rgb(28 23 23 / 37%);
+}
+
+.btn-total-conform:hover{
+    background-color: #0f8a1b;
+    cursor: pointer;
+}
+
+.btn-Booking-edit{
+    width: 130px;
+    height: 45px;
+    border-radius: 6px;
+    background-color: #f86c3a;
+    color: white;
+    border: none;
+    box-shadow: 1.5px 1.5px 5px rgb(28 23 23 / 37%);
+}
+
+.btn-Booking-edit:hover{
+    background-color: #fa5931;
+
+}
+
+
+
+/*====Footer========*/
+.nxt-travel-footer {
+    width: 100vw;
+    height: 45vh;
+    position: relative;
+    background-color: #181B26;
+    top: 253px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nxt-travel-footer > .child-footer {
+    margin: 26px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    flex-direction: column;
+}
+
+.footer-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.0rem;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.footer-description {
+    color: #77797F;
+    text-align: left;
+    line-height: 24px;
+    font-family: system-ui;
+
+}
+
+.discover-section {
+    margin-top: 16px;
+    margin-left: 0;
+    border-left: 2px solid rgba(255, 0, 0, 0.64);
+    padding-left: 7px;
+}
+
+.discover-topic {
+    font-size: 20px;
+    color: #77797F;
+    padding-left: 25px;
+    font-family: system-ui;
+}
+
+.icon-class-footer {
+    position: relative;
+    display: flex;
+    width: 25%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+

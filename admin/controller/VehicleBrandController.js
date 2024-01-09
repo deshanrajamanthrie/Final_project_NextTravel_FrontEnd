@@ -6,6 +6,7 @@ export class VehicleBrandController {
         $("#btn-update-vehicle").click(this.updateVehicleBrand.bind(this));
         $("#btn-save-vehicle").click(this.saveVehicleBrand.bind(this));
         $("#btn-search-vehicle").click(this.searchVehicleBrand.bind(this));
+        $("#btn-image-upload").click(this.uploadImage(this));
     }
 
     static url = "http://deshanz-vivobook:8080/api/v1/consume/brand";
@@ -63,6 +64,18 @@ export class VehicleBrandController {
         });
         this.clearTextField();
 
+
+    }
+
+    uploadImage() {
+        let vId = $("#txtvehicleIdsearch").val();
+
+        $.ajax({
+            url: VehicleBrandController.url + "/image?id=" + vId,
+            method:"PUT",
+            contentType:"multipart/form-data"
+
+        });
 
     }
 

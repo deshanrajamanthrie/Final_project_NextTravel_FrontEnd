@@ -53,9 +53,9 @@
     bottom: 20px;
 }
 .ayubowan{
-    font-family: monospace;
+    font-family: system-ui;
     font-size: 2rem;
-    color: darkred;
+    color: #E30146;
 }
 .description-our-ouervice{
     font-family: system-ui;
@@ -64,20 +64,30 @@
     font-size: 1rem;
 }
 .googleMap {
-     width: 150px;
-     height: 50px;
-     font-family: math;
-     background-color: #1A2B48;
-     color: white;
-     border-radius: 5px;
+    width: 150px;
+    height: 57px;
+    border: none;
+    border-radius: 60px;
+    background-color: #EF005A;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 1.0rem;
+    letter-spacing: 2px;
+    box-shadow: 1.5px 1.5px 5px rgb(28 23 23 / 37%);
      /*box-shadow: 10px 10px 1px 1px #0C8CE9;*/
 }
 
 .googleMap:hover{
-    background-color: darkred;
+    background-color: #b7024a;
 }
 .link-hrefMap{
     padding-top: 15px;
+}
+
+.google-map-div{
+    width: 100%;
+    height: 418px;
+    box-shadow: 1.5px 1.5px 5px rgb(28 23 23 / 37%);
 }
 
 

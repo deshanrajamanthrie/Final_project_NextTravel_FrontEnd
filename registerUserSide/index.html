@@ -3,506 +3,2307 @@
 <head>
     <meta charset="UTF-8">
     <title>Register User Side</title>
-    <link rel="stylesheet" href="./assets/boostrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/style/navbar.css">
-    <link rel="stylesheet" href="./assets/style/economy1stPage.css">
-    <link rel="stylesheet" href="./assets/style/MidRange2ndPage.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <link rel="stylesheet" href="https://fontawesome.com/icons/facebook?f=brands&s=solid&an=beat-fade">
+    <link rel="stylesheet" href="/registerUserSide/assets/boostrap/css/bootstrap.min.css">
+    <!--Css Import Files-->
+    <link rel="stylesheet" href="/registerUserSide/assets/style/booking-CustomerArea.css">
+    <link rel="stylesheet" href="/registerUserSide/assets/style/category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/registerUserSide/assets/style/guidePageStyle.css">
+    <link rel="stylesheet" href="/registerUserSide/assets/style/paymentSection.css">
+    <script src="https://kit.fontawesome.com/7b0cbac41c.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-<header>
-    <ul>
-        <li><a id="btn-economy" href="#ECONOMY">Economy</a></li>
-        <li><a id="btn-midRange" href="#MID RANGE">Mid Range</a></li>
-        <li><a href="#LUXURY">Luxury</a></li>
-        <li><a href="#SUPERLUXURY">Super Luxury</a></li>
-        <li style="float:right"><a class="active" href="#about">Log Out</a></li>
-    </ul>
-</header>
-
-
-<main id="economy1stPage">
-    <section class="topic">
-        <div><h2>ECONOMY PACKAGE</h2></div>
+<main id="booking-Customer-Area">
+    <section class="up-section">
+        <h1>Next Travel</h1>
+        <h6 class="up-section-child-two">Find Your Best Travel Location</h6>
+        <p class="up-section-child">Open in 24 Hours.</p>
     </section>
-
-
-    <section class="cars-Section">
-
-        <div class="card" style="width: 18rem;">
-            <img src="/registerUserSide/assets/img/celerio.PNG" class="card-img-top imgall" alt="...">
-            <div class="card-body">
-                <div class="row">
-                    <h4 id="car-id-1" class="card-title col"></h4>
-                    <h6 id="car-name-1" class="card-title col" style="color: darkred"></h6>
+    <section class="down-section">
+        <!---->
+        <ul class="pkg-list-container">
+            <li value="1">
+                <img src="/registerUserSide/assets/img/super.PNG" alt="">
+                <h3 class="category-name txt-regular">Regular</h3>
+                <div class="star-selector">
+                    <div class="hotelView-stars">
+                        <i class="fa-solid fa-star" style="color: #f89130;"></i>
+                        <i class="fa-solid fa-star" style="color: #f89130;"></i>
+                    </div>
                 </div>
-                <p class="card-text">This car petrol Transmission 1l can last 22km and fee for One day Rs4500/=
-                    and also 95 per 1km is charged </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="/registerUserSide/assets/img/susu.PNG" class="card-img-top all-vehicle-image" alt="...">
-            <div class="card-body">
-                <div class="row">
-                    <h4 id="car-id-2" class="card-title col"></h4>
-                    <h6 id="car-name-2" class="card-title col" style="color: darkred"></h6>
-                </div>
-                <p class="card-text">This car petrol Transmission 1l can last 10km and fee for One day Rs5000/=
-                    and also 100 per 1km is charged .</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="/registerUserSide/assets/img/wgon.PNG" class="card-img-top all-vehicle-image" alt="...">
-            <div class="card-body">
-                <div class="row">
-                    <h4 id="car-id-3" class="card-title col"></h4>
-                    <h6 id="car-name-3" class="card-title col " style="color: darkred"></h6>
-                </div>
-                <p class="card-text">This car petrol Transmission 1l can last 25km and fee for One day Rs5500/=
-                    and also 100 per 1km is charged.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="/registerUserSide/assets/img/aqua.PNG" class="card-img-top all-vehicle-image" alt="...">
-            <div class="card-body">
-                <div class="row">
-                    <h4 id="car-id-4" class="card-title col"></h4>
-                    <h6 id="car-name-4" class="card-title col" style="color: darkred"></h6>
-                </div>
-                <p class="card-text">his car petrol Transmission 1l can last 25km and fee for One day Rs5500/=
-                    and also 100 per 1km is charged.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-    </section>
-    <!--Hotel Section-->
+                <i id="btn-regular-category" class="fa-solid fa-plus add"></i>
 
-    <section class="hotel-section">
+                <h2></h2>
 
-        <div class="card" style="width: 18rem;">
-            <img src="/registerUserSide/assets/img/hotel.PNG" class="card-img-top all-vehicle-image" alt="...">
-            <div class="card-body">
-                <div class="row">
-                    <h4 id="hotel-id-01" class="card-title col"></h4>
-                    <h6 id="hotel-name-01" class="card-title col" style="color: darkred"></h6>
+            </li>
+            <li value="2">
+                <img src="/registerUserSide/assets/img/1.png"
+                     alt="">
+                <h3 class="category-name">Mid Level</h3>
+                <div class="star-selector">
+                    <div class="hotelView-stars">
+                        <i class="fa-solid fa-star" style="color: #f89130;"></i>
+                        <i class="fa-solid fa-star" style="color: #f89130;"></i>
+                        <i class="fa-solid fa-star" style="color: #f89130;"></i>
+                    </div>
                 </div>
-                <p class="card-text">We are commited to providing you with high qulity Service
-                    our email:heitage@gmail.com,and pets Not Allowed.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="/registerUserSide/assets/img/hotel1.PNG" class="card-img-top all-vehicle-image" alt="...">
-            <div class="card-body">
-                <div class="row">
-                    <h4 id="hotel-id-02" class="card-title col"></h4>
-                    <h6 id="hotel-name-02" class="card-title col" style="color: darkred"></h6>
-                </div>
-                <p class="card-text">We are commited to providing you with high qulity Service
-                    our email:peacock@gmail.com,and pets Not Allowed.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="/registerUserSide/assets/img/h3.PNG" class="card-img-top all-vehicle-image" alt="...">
-            <div class="card-body">
-                <div class="row">
-                    <h4 id="hotel-id-03" class="card-title col"></h4>
-                    <h6 id="hotel-name-03" class="card-title col" style="color: darkred"></h6>
-                </div>
-                <p class="card-text">We are commited to providing you with high qulity Service
-                    our email:rivberView@gmail.com,and pets Not Allowed.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-    </section>
+                <i id="btn-midLevel-category" class="fa-solid fa-plus add"></i>
+                <h2></h2>
 
+            </li>
+            <li value="3">
+                <img src="/registerUserSide/assets/img/regular.PNG" alt="">
+                <h3 class="category-name">Luxury</h3>
+                <div class="star-selector">
+                    <div class="hotelView-stars">
+                        <i class="fa-solid fa-star" style="color: #f89130;"></i>
+                        <i class="fa-solid fa-star" style="color: #f89130;"></i>
+                        <i class="fa-solid fa-star" style="color: #f89130;"></i>
+                        <i class="fa-solid fa-star" style="color: #f89130;"></i>
+                    </div>
+                </div>
+                <i id="btn-luxury-category" class="fa-solid fa-plus add"></i>
+                <h2></h2>
 
-    <section>
-        <section class="journey-topic">
-            <div><h4>Select Your Journey Detail</h4></div>
+            </li>
+            <li value="4">
+                <img src="/registerUserSide/assets/img/h3.PNG" alt="">
+                <h3 class="category-name">Super Luxury</h3>
+                <div class="star-selector">
+                    <div class="hotelView-stars">
+                        <i class="fa-solid fa-star" style="color: #f89130;"></i>
+                        <i class="fa-solid fa-star" style="color: #f89130;"></i>
+                        <i class="fa-solid fa-star" style="color: #f89130;"></i>
+                        <i class="fa-solid fa-star" style="color: #f89130;"></i>
+                        <i class="fa-solid fa-star" style="color: #f89130;"></i>
+                    </div>
+                </div>
+                <i id="btn-super-Luxury-category" class="fa-solid fa-plus add"></i>
+                <h2></h2>
+
+            </li>
+        </ul>
+        <section class="down-section-image">
+            <img class="image-down-section" src="/registerUserSide/assets/img/tipoftravel.PNG" alt="">
         </section>
-
-        <section class="input-field">
-            <div class="row">
-                <div class="col">
-                    <input type="text" id="txt-travelArea" class="form-control" placeholder="Your Journey Area"
-                           aria-label="">
-                </div>
-                <div class="col">
-                    <input type="text" id="txtStartDate" class="form-control" placeholder="Start Date"
-                           aria-label="">
-                </div>
-                <div class="col">
-                    <input type="text" id="txtEndDate" class="form-control" placeholder="End Rate"
-                           aria-label="">
-                </div>
-                <div class="col">
-                    <input type="text" id="txt-countDay" class="form-control" placeholder="Count Day"
-                           aria-label="">
-                </div>
-            </div>
-
-            <!------------->
-            <div class="row mt-3">
-                <div class="col">
-                    <input type="text" id="txt-Guide" class="form-control" placeholder="Are You Want Guide"
-                           aria-label="">
-                </div>
-                <div class="col">
-                    <input type="text" id="txt-noChildren" class="form-control" placeholder="Number Of Children"
-                           aria-label="">
-                </div>
-                <div class="col">
-                    <input type="text" id="txt-noAdult" class="form-control" placeholder="Number Of Adult"
-                           aria-label="">
-                </div>
-                <div class="col">
-                    <input type="text" id="txt-headCount" class="form-control" placeholder="Head Count"
-                           aria-label="">
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col">
-                    <input type="text" id="txt-PaidValue" class="form-control" placeholder="Paid Value" aria-label="">
-                </div>
-                <!-- <div class="col">
-                     <input type="text" id="txt-PackageCategory" class="form-control" placeholder="Package Category"
-                            aria-label="">
-                 </div>-->
-                <div class="col">
-                    <button id="btn-save-Travel" type="button" class="btn btn-primary" style="width:138px">Submit
-                        Detail
-                    </button>
-                </div>
-
-            </div>
-
-        </section>
-
-
     </section>
-    <!--Booking Detail-->
 
-    <section>
-        <section class="journey-topic">
-            <div><h4>Booking Section</h4></div>
-        </section>
+</main>
+<!--===========================================================================Regular Category-->
+<main id="regular-category-id" class="regular-category">
+    <section class="up-section-category">
+        <h1>Regular Category</h1>
+        <h6 class="up-section-child-two">Find Your Best Travel </h6>
+    </section>
+    <section class="row down-section-category">
+        <div style="width: 250px;color:#6F6F78" class="col-md-6">
+            <label class="m-1 text-sm-end top-label">Where are you going ? :</label>
+            <select class="form-select input-unique top-label hotel-location-Action"
+                    aria-label="Default select example">
+                <option selected>Open This Select Menu</option>
+                <option value="Kalutara">Kalutara</option>
+                <option value="Gale">Galle</option>
+                <option value="Colombo">Colombo</option>
+                <option value="NuwaraEliya">Nuwara Eliya</option>
+                <option value="Kandy">Kandy</option>
+                <option value="Anuradapura">Anuradapura</option>
+                <option value="Trinco">Trincomalee</option>
+            </select>
+            <button class="btn-hotel-style btn-hotel-OnAction">
+                <i class="fa fa-search"></i></button>
+        </div>
 
-        <section class="input-field">
-            <div class="row">
-                <div class="col">
-                    <input type="text" id="txt-bookingDate" class="form-control" placeholder="BookingDate"
-                           aria-label="Hotel Id">
-                </div>
-                <div class="col">
-                    <input type="text" id="txt-booking-vehicle" class="form-control" placeholder="Vehicle ID"
-                           aria-label="Hotel Name">
-                </div>
-                <div class="col">
-                    <input type="text" id="txtbooking-GuideId" class="form-control" placeholder="Guide ID"
-                           aria-label="Star Rate">
-                </div>
-                <!-- <div class="col">
-                     <input type="text" id="txtHotelLocation" class="form-control" placeholder="Location"
-                            aria-label="Location">
-                 </div>-->
-                <div class="col">
-                    <input type="text" id="txt-hotelId" class="form-control" placeholder="Hotel ID" aria-label="">
+
+        <div style="position: relative;left: 108px;color:#6F6F78" class="form-group col-md-6 w-25 ">
+            <label class="m-1 text-sm-end top-label">Pick Your Start Date :</label>
+            <input class="input-unique date-picker top-label date-startDay" type="date" name="birthday">
+
+        </div>
+        <div style="position: relative;left: 75px;color:#6F6F78" class="col w-25 ">
+            <label class="m-1 text-sm-end top-label">Pick Your End Date :</label>
+            <input class="input-unique date-picker top-label date-EndDay" type="date" name="birthday">
+
+        </div>
+        <div style="position: relative;left: 93px;color:#6F6F78" class="col w-25 ">
+            <label class="m-1 text-sm-end top-label">No Child :</label>
+            <input style="width: 103px" type="number" class="input-unique form-control top-label txt-childCount"
+                   placeholder="00">
+
+        </div>
+        <div style="position: relative;left: 55px;color:#6F6F78" class="col w-25 ">
+            <label class="m-1 text-sm-end top-label">No Adult :</label>
+            <input style="width: 103px" type="number" class="input-unique form-control top-label txt-AdultCount"
+                   placeholder="00">
+
+        </div>
+
+        <section style="display: none" class="card-system-hotel hotel-card-parent">
+            <div class="card" style="width: 18rem;">
+                <img src="/registerUserSide/assets/img/regular.PNG" class="card-img-top" alt="...">
+                <div class="card-body card-body-all">
+                    <div class="hotel-card-body">
+                        <h5 class="card-title-hotel">Card Title</h5>
+                        <input type="checkbox" name="hotel1" value="#">
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">STAR RATE</h6>
+                        <p class="data-hotel-crd">3</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">CONTACT</h6>
+                        <p class="data-hotel-crd">+94 342225008</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PETS</h6>
+                        <p class="data-hotel-crd">Allow</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PAYMENT</h6>
+                        <p class="data-hotel-crd">10000 Per Day</p>
+                    </div>
                 </div>
             </div>
+            <!--==============-->
+            <div class="card" style="width: 18rem;">
+                <img src="/registerUserSide/assets/img/regular.PNG" class="card-img-top" alt="...">
+                <div class="card-body card-body-all">
+                    <div class="hotel-card-body">
+                        <h5 class="card-title-hotel">Card Title</h5>
+                        <input type="checkbox" name="vehicle1" value="#">
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">STAR RATE</h6>
+                        <p class="data-hotel-crd">3</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">CONTACT</h6>
+                        <p class="data-hotel-crd">+94 342225008</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PETS</h6>
+                        <p class="data-hotel-crd">Allow</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PAYMENT</h6>
+                        <p class="data-hotel-crd">10000 Per Day</p>
+                    </div>
 
-            <!------------->
-            <div class="row mt-3">
-                <div class="col">
-                    <input type="text" id="txt-bookingPaid" class="form-control" placeholder="Payment"
-                           aria-label="E-Mail">
-                </div>
-                <div class="col">
-                    <input type="text" id="txtbookind-payment-status" class="form-control"
-                           placeholder="How Your Payment"
-                           aria-label="Contact Num 1">
-                </div>
-                <div class="col">
-                    <input type="text" id="txt-booking-User" class="form-control" placeholder="txt-User-Id"
-                           aria-label="Pets Allow">
-                </div>
-                <div class="col">
-                    <button id="btn-save-Booking" type="button" class="btn btn-danger" style="width:200px">BOOKING
-                        CONFORM
-                    </button>
 
                 </div>
             </div>
-
-
+            <div class="card" style="width: 18rem;">
+                <img src="/registerUserSide/assets/img/regular.PNG" class="card-img-top" alt="...">
+                <div class="card-body card-body-all">
+                    <div class="hotel-card-body">
+                        <h5 class="card-title-hotel">Card Title</h5>
+                        <input type="checkbox" name="vehicle1" value="#">
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">STAR RATE</h6>
+                        <p class="data-hotel-crd">3</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">CONTACT</h6>
+                        <p class="data-hotel-crd">+94 342225008</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PETS</h6>
+                        <p class="data-hotel-crd">Allow</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PAYMENT</h6>
+                        <p class="data-hotel-crd">10000 Per Day</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
-    </section>
+        <section class="vehicle-section">
+            <h4 class="vehicle-topic">Select Your Vehicle</h4>
+            <section class="vehicle-section-flex">
+                <section class="scroll-section">
+                    <section class="parent-vhCard vehicle-card-parent"> <!--Id-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                        <!--=============-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                        <!--==========================-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                        <!--====================================-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <button class="guide-expand-btn btn-Guide-onAction">Do You Want A Guide</button>
+                <!---->
+                <div style="display: none" class="modal id01">
 
+                    <form class="modal-content animate">
+                        <div class="imgcontainer">
+                            <!--document.getElementsByClassName('id01').style.display='none'-->
+                            <span onclick="$('.id01').css('display','none')" class="close"
+                                  title="Close Modal"> &times;</span>
+                            <section class="guide-section">
+                                <!--==-->
+                                <section class="scroll-section-guide">
+                                    <section class="guide-cards-Parent">
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox"
+                                                       name="vehicle1" value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!----==================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--===================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--=============-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--============-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--=======================================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--========================================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                            </section>
+                        </div>
+                    </form>
+                </div>
+                <section class="payment-section">
+                    <div class="line-bar"></div>
+                    <div class="payment-area ">
+                        <div style="color: #0b0567; font-size: medium" class="topic-payment">
+                            <h6 style="font-weight: bolder" class="selected-bar">Your Selected </h6>
+                            <h6 style="font-weight: bolder" class="selected-bar">Amount</h6>
+                        </div>
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Hotel Charges</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-hotel-Price">0.00</h6>
+                        </div>
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Vehicle Charges</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-Vehicle-Price">
+                                0.00</h6>
+                        </div>
+
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Guide Charges</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-guide-price">0.00</h6>
+                        </div>
+
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Count Days</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-countDays">Empty</h6>
+                        </div>
+
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Service Charge</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-Service-Charge">
+                                10%</h6>
+                        </div>
+
+
+                        <div class="topic-payment">
+                            <h6 style="font-weight: bolder;color: red; font-size: medium" class="selected-bar">
+                                Total </h6>
+                            <h6 style="font-weight: bolder;color: red; font-size: medium"
+                                class="selected-bar txt-totalPayment">00.00</h6>
+                        </div>
+                    </div>
+                    <div class="line-bar ">
+
+                    </div>
+                    <div>
+
+                        <button class="btn-Travel-conform btn-ConformTravel">Conform Travel</button>
+                        <button class="btn-total-conform btn-billGenerator">Total Payment</button>
+                    </div>
+
+                </section>
+                <!---->
+            </section>
+
+
+        </section>
+        <section class="atm-Card-Access">
+            <input class="form-control form-control-sm w-75" type="text" placeholder="Nic Number"
+                   aria-label=".form-control-sm example">
+            <span class="src-class">
+                  <input class="form-control form-control-sm w-50" type="text" placeholder="OTP"
+                         aria-label=".form-control-sm example">
+                  <input style="margin-left: 42px;" class="form-control form-control-sm w-50" type="text"
+                         placeholder="80127 XXXXX"
+                         aria-label=".form-control-sm example">
+            </span>
+            <span class="src-class">
+                <input class="form-control form-control-sm w-75" type="text" placeholder="Card Holder Number"
+                       aria-label=".form-control-sm example">
+                <button class="payment-btn">Pay</button>
+            </span>
+            <button class="btn-Booking-edit btn-Booking-onAction">Booking</button>
+        </section>
+    </section>
+    <footer class="nxt-travel-footer">
+        <section class="child-footer">
+            <h2 class="footer-name">Next Travel pvt.ltd</h2>
+            <p class="footer-description">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Ad alias, aliquid culpa deleniti dignissimos
+                distinctio earum illo incidunt inventore itaque magnam nisi possimus quis,
+                sequi soluta
+                totam unde. Delectus eveniet ipsum natus rerum voluptas voluptatibus!</p>
+        </section>
+        <section class="child-footer">
+            <h6 class="discover-topic">Discover</h6>
+            <p class="footer-description discover-section">Travel</p>
+            <p class="footer-description discover-section">Hotel</p>
+            <p class="footer-description discover-section">Guide</p>
+            <p style="margin-left: 16px" class="footer-description discover-section">Booking</p>
+        </section>
+        <section class="child-footer">
+            <h6 class="discover-topic">Contacts</h6>
+            <p style="margin-left: 15px;" class="footer-description discover-section">www.nextTravel.lk</p>
+            <p class="footer-description discover-section">+94 741422467</p>
+            <p class="footer-description discover-section">+94 715807726</p>
+            <p style="margin-left: 76px;" class="footer-description discover-section">nextTravel001@gmail.com</p>
+        </section>
+        <section class="icon-class-footer">
+            <i class="fa-brands fa-facebook fa-beat fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-instagram fa-beat fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-google fa-beat fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-whatsapp fa-beat fa-xl" style="color: #ffffff;"></i>
+        </section>
+    </footer>
 
 </main>
 
-<!-----------------------------------------------------2nd Page-->
+<!--===========================================================================MidLevel Category-->
 
-<main id="MidRange2ndPage">
-    <section class="topic">
-        <div><h2>MID RANGE PACKAGE</h2></div>
+<main id="midRange-category-id" class="regular-category">
+    <section class="up-section-category">
+        <h1>Mid Level Category</h1>
+        <h6 class="up-section-child-two">Find Your Best Travel </h6>
     </section>
-
-
-    <section class="cars-Section">
-
-        <div class="card" style="width: 18rem;">
-            <img src="/registerUserSide/assets/img/yaris.PNG" class="card-img-top all-vehicle-image" alt="...">
-            <div class="card-body">
-                <div class="row">
-                    <h4 class="card-title col">1</h4>
-                    <h6 class="card-title col" style="color: darkred">Toyota Yaris</h6>
-                </div>
-                <p class="card-text">This car petrol Transmission 1l can last 22km and fee for One day Rs4500/=
-                    and also 95 per 1km is charged </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+    <section class="row down-section-category">
+        <div style="width: 250px;color:#6F6F78" class="col-md-6">
+            <label class="m-1 text-sm-end top-label">Where are you going ? :</label>
+            <select class="form-select input-unique top-label hotel-location-Action"
+                    aria-label="Default select example">
+                <option selected>Open This Select Menu</option>
+                <option value="Kalutara">Kalutara</option>
+                <option value="Gale">Galle</option>
+                <option value="Colombo">Colombo</option>
+                <option value="NuwaraEliya">Nuwara Eliya</option>
+                <option value="Kandy">Kandy</option>
+                <option value="Anuradapura">Anuradapura</option>
+                <option value="Trinco">Trincomalee</option>
+            </select>
+            <button class="btn-hotel-style btn-hotel-OnAction">
+                <i class="fa fa-search"></i></button>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="/registerUserSide/assets/img/yarisLong.PNG" class="card-img-top all-vehicle-image" alt="...">
-            <div class="card-body">
-                <div class="row">
-                    <h4 class="card-title col">2</h4>
-                    <h6 class="card-title col" style="color: darkred">Toyota Yaris(P/M)</h6>
-                </div>
-                <p class="card-text">This car petrol Transmission 1l can last 10km and fee for One day Rs5000/=
-                    and also 100 per 1km is charged .</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+
+
+        <div style="position: relative;left: 108px;color:#6F6F78" class="form-group col-md-6 w-25 ">
+            <label class="m-1 text-sm-end top-label">Pick Your Start Date :</label>
+            <input class="input-unique date-picker top-label date-startDay" type="date" name="birthday">
+
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="/registerUserSide/assets/img/crwan2.PNG" class="card-img-top all-vehicle-image" alt="...">
-            <div class="card-body">
-                <div class="row">
-                    <h4 class="card-title col">3</h4>
-                    <h6 class="card-title col " style="color: darkred"> Nissan Carvan</h6>
-                </div>
-                <p class="card-text">This car petrol Transmission 1l can last 25km and fee for One day Rs5500/=
-                    and also 100 per 1km is charged.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        <div style="position: relative;left: 75px;color:#6F6F78" class="col w-25 ">
+            <label class="m-1 text-sm-end top-label">Pick Your End Date :</label>
+            <input class="input-unique date-picker top-label date-EndDay" type="date" name="birthday">
+
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="/registerUserSide/assets/img/nissanCarravn.PNG" class="card-img-top all-vehicle-image" alt="...">
-            <div class="card-body">
-                <div class="row">
-                    <h4 class="card-title col">4</h4>
-                    <h6 class="card-title col" style="color: darkred">Nissan Carwan(P/A)</h6>
-                </div>
-                <p class="card-text">his car petrol Transmission 1l can last 25km and fee for One day Rs5500/=
-                    and also 100 per 1km is charged.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        <div style="position: relative;left: 93px;color:#6F6F78" class="col w-25 ">
+            <label class="m-1 text-sm-end top-label">No Child :</label>
+            <input style="width: 103px" type="number" class="input-unique form-control top-label txt-childCount"
+                   placeholder="00">
+
         </div>
-    </section>
-    <!--Hotel Section-->
+        <div style="position: relative;left: 55px;color:#6F6F78" class="col w-25 ">
+            <label class="m-1 text-sm-end top-label">No Adult :</label>
+            <input style="width: 103px" type="number" class="input-unique form-control top-label txt-AdultCount"
+                   placeholder="00">
 
-    <section class="hotel-section">
-
-        <div class="card" style="width: 18rem;">
-            <img src="/registerUserSide/assets/img/h4.PNG" class="card-img-top all-vehicle-image" alt="...">
-            <div class="card-body">
-                <div class="row">
-                    <h4 class="card-title col">H001</h4>
-                    <h6 class="card-title col" style="color: darkred">Jie jie Hotel</h6>
-                </div>
-                <p class="card-text">We are commited to providing you with high qulity Service
-                    our email:heitage@gmail.com,and pets Not Allowed.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="/registerUserSide/assets/img/h5.PNG" class="card-img-top all-vehicle-image" alt="...">
-            <div class="card-body">
-                <div class="row">
-                    <h4 class="card-title col">H002</h4>
-                    <h6 class="card-title col" style="color: darkred">Ananthara Hotel</h6>
-                </div>
-                <p class="card-text">We are commited to providing you with high qulity Service
-                    our email:peacock@gmail.com,and pets Not Allowed.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="/registerUserSide/assets/img/h6.PNG" class="card-img-top all-vehicle-image" alt="...">
-            <div class="card-body">
-                <div class="row">
-                    <h4 class="card-title col">H003</h4>
-                    <h6 class="card-title col" style="color: darkred">Malu Malu Hotel</h6>
-                </div>
-                <p class="card-text">We are commited to providing you with high qulity Service
-                    our email:rivberView@gmail.com,and pets Not Allowed.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-    </section>
 
-
-    <section>
-        <section class="journey-topic">
-            <div><h4>Select Your Journey Detail</h4></div>
-        </section>
-
-        <section class="input-field">
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Your Journey Area"
-                           aria-label="">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Start Date"
-                           aria-label="">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="End Rate"
-                           aria-label="">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Count Day"
-                           aria-label="">
+        <section style="display: none" class="card-system-hotel hotel-card-parent">
+            <div class="card" style="width: 18rem;">
+                <img src="/registerUserSide/assets/img/regular.PNG" class="card-img-top" alt="...">
+                <div class="card-body card-body-all">
+                    <div class="hotel-card-body">
+                        <h5 class="card-title-hotel">Card Title</h5>
+                        <input type="checkbox" name="hotel1" value="#">
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">STAR RATE</h6>
+                        <p class="data-hotel-crd">3</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">CONTACT</h6>
+                        <p class="data-hotel-crd">+94 342225008</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PETS</h6>
+                        <p class="data-hotel-crd">Allow</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PAYMENT</h6>
+                        <p class="data-hotel-crd">10000 Per Day</p>
+                    </div>
                 </div>
             </div>
+            <!--==============-->
+            <div class="card" style="width: 18rem;">
+                <img src="/registerUserSide/assets/img/regular.PNG" class="card-img-top" alt="...">
+                <div class="card-body card-body-all">
+                    <div class="hotel-card-body">
+                        <h5 class="card-title-hotel">Card Title</h5>
+                        <input type="checkbox" name="vehicle1" value="#">
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">STAR RATE</h6>
+                        <p class="data-hotel-crd">3</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">CONTACT</h6>
+                        <p class="data-hotel-crd">+94 342225008</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PETS</h6>
+                        <p class="data-hotel-crd">Allow</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PAYMENT</h6>
+                        <p class="data-hotel-crd">10000 Per Day</p>
+                    </div>
 
-            <!------------->
-            <div class="row mt-3">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Are You Want Guide"
-                           aria-label="">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Number Of Children"
-                           aria-label="">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Number Of Adult"
-                           aria-label="">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Head Count"
-                           aria-label="">
+
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Paid Value" aria-label="">
+            <div class="card" style="width: 18rem;">
+                <img src="/registerUserSide/assets/img/regular.PNG" class="card-img-top" alt="...">
+                <div class="card-body card-body-all">
+                    <div class="hotel-card-body">
+                        <h5 class="card-title-hotel">Card Title</h5>
+                        <input type="checkbox" name="vehicle1" value="#">
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">STAR RATE</h6>
+                        <p class="data-hotel-crd">3</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">CONTACT</h6>
+                        <p class="data-hotel-crd">+94 342225008</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PETS</h6>
+                        <p class="data-hotel-crd">Allow</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PAYMENT</h6>
+                        <p class="data-hotel-crd">10000 Per Day</p>
+                    </div>
                 </div>
-                <!-- <div class="col">
-                     <input type="text" id="txt-PackageCategory" class="form-control" placeholder="Package Category"
-                            aria-label="">
-                 </div>-->
-                <div class="col">
-                    <button type="button" class="btn btn-primary" style="width:138px">Submit
-                        Detail
-                    </button>
-                </div>
-
             </div>
-
         </section>
 
 
-    </section>
-    <!--Booking Detail-->
+        <section class="vehicle-section">
+            <h4 class="vehicle-topic">Select Your Vehicle</h4>
+            <section class="vehicle-section-flex">
+                <section class="scroll-section">
+                    <section class="parent-vhCard vehicle-card-parent"> <!--Id-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                        <!--=============-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                        <!--==========================-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                        <!--====================================-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <button class="guide-expand-btn btn-Guide-onAction">Do You Want A Guide</button>
+                <!---->
+                <div style="display: none" class="modal id01">
 
-    <section>
-        <section class="journey-topic">
-            <div><h4>Booking Section</h4></div>
+                    <form class="modal-content animate">
+                        <div class="imgcontainer">
+                            <!--document.getElementsByClassName('id01').style.display='none'-->
+                            <span onclick="$('.id01').css('display','none')" class="close"
+                                  title="Close Modal"> &times;</span>
+                            <section class="guide-section">
+                                <!--==-->
+                                <section class="scroll-section-guide">
+                                    <section class="guide-cards-Parent">
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox"
+                                                       name="vehicle1" value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!----==================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--===================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--=============-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--============-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--=======================================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--========================================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                            </section>
+                        </div>
+                    </form>
+                </div>
+                <section class="payment-section">
+                    <div class="line-bar"></div>
+                    <div class="payment-area ">
+                        <div style="color: #0b0567; font-size: medium" class="topic-payment">
+                            <h6 style="font-weight: bolder" class="selected-bar">Your Selected </h6>
+                            <h6 style="font-weight: bolder" class="selected-bar">Amount</h6>
+                        </div>
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Hotel Charges</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-hotel-Price">0.00</h6>
+                        </div>
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Vehicle Charges</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-Vehicle-Price">
+                                0.00</h6>
+                        </div>
+
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Guide Charges</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-guide-price">0.00</h6>
+                        </div>
+
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Count Days</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-countDays">Empty</h6>
+                        </div>
+
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Service Charge</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-Service-Charge">
+                                10%</h6>
+                        </div>
+
+
+                        <div class="topic-payment">
+                            <h6 style="font-weight: bolder;color: red; font-size: medium" class="selected-bar">
+                                Total </h6>
+                            <h6 style="font-weight: bolder;color: red; font-size: medium"
+                                class="selected-bar txt-totalPayment">00.00</h6>
+                        </div>
+                    </div>
+                    <div class="line-bar ">
+
+                    </div>
+                    <div>
+
+                        <button class="btn-Travel-conform btn-ConformTravel">Conform Travel</button>
+                        <button class="btn-total-conform btn-billGenerator">Total Payment</button>
+                    </div>
+
+                </section>
+                <!---->
+            </section>
+
+
+        </section>
+        <section class="atm-Card-Access">
+            <input class="form-control form-control-sm w-75" type="text" placeholder="Nic Number"
+                   aria-label=".form-control-sm example">
+            <span class="src-class">
+                  <input class="form-control form-control-sm w-50" type="text" placeholder="OTP"
+                         aria-label=".form-control-sm example">
+                  <input style="margin-left: 42px;" class="form-control form-control-sm w-50" type="text"
+                         placeholder="80127 XXXXX"
+                         aria-label=".form-control-sm example">
+            </span>
+            <span class="src-class">
+                <input class="form-control form-control-sm w-75" type="text" placeholder="Card Holder Number"
+                       aria-label=".form-control-sm example">
+                <button class="payment-btn">Pay</button>
+            </span>
+            <button class="btn-Booking-edit btn-Booking-onAction">Booking</button>
+        </section>
+    </section>
+    <footer class="nxt-travel-footer">
+        <!--===-->
+        <section class="child-footer">
+            <h2 class="footer-name">Next Travel pvt.ltd</h2>
+            <p class="footer-description">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Ad alias, aliquid culpa deleniti dignissimos
+                distinctio earum illo incidunt inventore itaque magnam nisi possimus quis,
+                sequi soluta
+                totam unde. Delectus eveniet ipsum natus rerum voluptas voluptatibus!</p>
+
+        </section>
+        <section class="child-footer">
+            <h6 class="discover-topic">Discover</h6>
+            <p class="footer-description discover-section">Travel</p>
+            <p class="footer-description discover-section">Hotel</p>
+            <p class="footer-description discover-section">Guide</p>
+            <p style="margin-left: 16px" class="footer-description discover-section">Booking</p>
+        </section>
+        <section class="child-footer">
+            <h6 class="discover-topic">Contacts</h6>
+            <p style="margin-left: 15px;" class="footer-description discover-section">www.nextTravel.lk</p>
+            <p class="footer-description discover-section">+94 741422467</p>
+            <p class="footer-description discover-section">+94 715807726</p>
+            <p style="margin-left: 76px;" class="footer-description discover-section">nextTravel001@gmail.com</p>
+        </section>
+        <section class="icon-class-footer">
+            <i class="fa-brands fa-facebook fa-beat fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-instagram fa-beat fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-google fa-beat fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-whatsapp fa-beat fa-xl" style="color: #ffffff;"></i>
         </section>
 
-        <section class="input-field">
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="BookingDate"
-                           aria-label="Hotel Id">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Vehicle ID"
-                           aria-label="Hotel Name">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Guide ID"
-                           aria-label="Star Rate">
-                </div>
-                <!-- <div class="col">
-                     <input type="text" id="txtHotelLocation" class="form-control" placeholder="Location"
-                            aria-label="Location">
-                 </div>-->
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Hotel ID" aria-label="">
-                </div>
-            </div>
 
-            <!------------->
-            <div class="row mt-3">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Payment"
-                           aria-label="E-Mail">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control"
-                           placeholder="How Your Payment"
-                           aria-label="Contact Num 1">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="txt-User-Id"
-                           aria-label="Pets Allow">
-                </div>
-                <div class="col">
-                    <button type="button" class="btn btn-danger" style="width:200px">BOOKING
-                        CONFORM
-                    </button>
-
-                </div>
-            </div>
-
-
-        </section>
-
-
-    </section>
-
+        <!--===-->
+    </footer>
 
 </main>
-<script src="./assets/JQuery/jquery-3.6.4.min (1).js"></script>
-<script type="module" src="./registerUserController/TravelController.js"></script>
-<script type="module" src="./registerUserController/BookingController.js"></script>
-<script type="module" src="./registerUserController/VehicleController.js"></script>
-<script type="module" src="./registerUserController/HotelController.js"></script>
-
-<script>
-    $("#btn-economy").click(function () {
-        $("#economy1stPage").css('display', 'block');
-        $("#MidRange2ndPage").css('display', 'none');
-
-    });
-    $("#btn-midRange").click(function () {
-        $("#economy1stPage").css('display', 'none');
-        $("#MidRange2ndPage").css('display', 'block');
+<!--===========================================================================Luxury Category-->
 
 
-    })
+<main id="luxury-category-id" class="regular-category">
+    <section class="up-section-category">
+        <h1>Luxury Category</h1>
+        <h6 class="up-section-child-two">Find Your Best Travel </h6>
+    </section>
+    <section class="row down-section-category">
+        <div style="width: 250px;color:#6F6F78" class="col-md-6">
+            <label class="m-1 text-sm-end top-label">Where are you going ? :</label>
+            <select class="form-select input-unique top-label hotel-location-Action"
+                    aria-label="Default select example">
+                <option selected>Open This Select Menu</option>
+                <option value="Kalutara">Kalutara</option>
+                <option value="Gale">Galle</option>
+                <option value="Colombo">Colombo</option>
+                <option value="NuwaraEliya">Nuwara Eliya</option>
+                <option value="Kandy">Kandy</option>
+                <option value="Anuradapura">Anuradapura</option>
+                <option value="Trinco">Trincomalee</option>
+            </select>
+            <button class="btn-hotel-style btn-hotel-OnAction">
+                <i class="fa fa-search"></i></button>
+        </div>
 
 
-</script>
+        <div style="position: relative;left: 108px;color:#6F6F78" class="form-group col-md-6 w-25 ">
+            <label class="m-1 text-sm-end top-label">Pick Your Start Date :</label>
+            <input class="input-unique date-picker top-label date-startDay" type="date" name="birthday">
 
+        </div>
+        <div style="position: relative;left: 75px;color:#6F6F78" class="col w-25 ">
+            <label class="m-1 text-sm-end top-label">Pick Your End Date :</label>
+            <input class="input-unique date-picker top-label date-EndDay" type="date" name="birthday">
+
+        </div>
+        <div style="position: relative;left: 93px;color:#6F6F78" class="col w-25 ">
+            <label class="m-1 text-sm-end top-label">No Child :</label>
+            <input style="width: 103px" type="number" class="input-unique form-control top-label txt-childCount"
+                   placeholder="00">
+
+        </div>
+        <div style="position: relative;left: 55px;color:#6F6F78" class="col w-25 ">
+            <label class="m-1 text-sm-end top-label">No Adult :</label>
+            <input style="width: 103px" type="number" class="input-unique form-control top-label txt-AdultCount"
+                   placeholder="00">
+
+        </div>
+
+        <section style="display: none" class="card-system-hotel hotel-card-parent">
+            <div class="card" style="width: 18rem;">
+                <img src="/registerUserSide/assets/img/regular.PNG" class="card-img-top" alt="...">
+                <div class="card-body card-body-all">
+                    <div class="hotel-card-body">
+                        <h5 class="card-title-hotel">Card Title</h5>
+                        <input type="checkbox" id="hotel-id" name="hotel1" value="#">
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">STAR RATE</h6>
+                        <p class="data-hotel-crd">3</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">CONTACT</h6>
+                        <p class="data-hotel-crd">+94 342225008</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PETS</h6>
+                        <p class="data-hotel-crd">Allow</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PAYMENT</h6>
+                        <p class="data-hotel-crd">10000 Per Day</p>
+                    </div>
+                </div>
+            </div>
+            <!--==============-->
+            <div class="card" style="width: 18rem;">
+                <img src="/registerUserSide/assets/img/regular.PNG" class="card-img-top" alt="...">
+                <div class="card-body card-body-all">
+                    <div class="hotel-card-body">
+                        <h5 class="card-title-hotel">Card Title</h5>
+                        <input type="checkbox" name="vehicle1" value="#">
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">STAR RATE</h6>
+                        <p class="data-hotel-crd">3</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">CONTACT</h6>
+                        <p class="data-hotel-crd">+94 342225008</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PETS</h6>
+                        <p class="data-hotel-crd">Allow</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PAYMENT</h6>
+                        <p class="data-hotel-crd">10000 Per Day</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/registerUserSide/assets/img/regular.PNG" class="card-img-top" alt="...">
+                <div class="card-body card-body-all">
+                    <div class="hotel-card-body">
+                        <h5 class="card-title-hotel">Card Title</h5>
+                        <input type="checkbox" name="vehicle1" value="#">
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">STAR RATE</h6>
+                        <p class="data-hotel-crd">3</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">CONTACT</h6>
+                        <p class="data-hotel-crd">+94 342225008</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PETS</h6>
+                        <p class="data-hotel-crd">Allow</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PAYMENT</h6>
+                        <p class="data-hotel-crd">10000 Per Day</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="vehicle-section">
+            <h4 class="vehicle-topic">Select Your Vehicle</h4>
+            <section class="vehicle-section-flex">
+                <section class="scroll-section">
+                    <section class="parent-vhCard vehicle-card-parent"> <!--Id-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                        <!--=============-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                        <!--==========================-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                        <!--====================================-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <button class="guide-expand-btn btn-Guide-onAction">Do You Want A Guide</button>
+                <!---->
+                <div style="display: none" class="modal id01">
+
+                    <form class="modal-content animate">
+                        <div class="imgcontainer">
+                            <!--document.getElementsByClassName('id01').style.display='none'-->
+                            <span onclick="$('.id01').css('display','none')" class="close"
+                                  title="Close Modal"> &times;</span>
+                            <section class="guide-section">
+                                <!--==-->
+                                <section class="scroll-section-guide">
+                                    <section class="guide-cards-Parent">
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox"
+                                                       name="vehicle1" value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!----==================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--===================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--=============-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--============-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--=======================================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--========================================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                            </section>
+                        </div>
+                    </form>
+                </div>
+                <section class="payment-section">
+                    <div class="line-bar"></div>
+                    <div class="payment-area ">
+                        <div style="color: #0b0567; font-size: medium" class="topic-payment">
+                            <h6 style="font-weight: bolder" class="selected-bar">Your Selected </h6>
+                            <h6 style="font-weight: bolder" class="selected-bar">Amount</h6>
+                        </div>
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Hotel Charges</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-hotel-Price">0.00</h6>
+                        </div>
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Vehicle Charges</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-Vehicle-Price">
+                                0.00</h6>
+                        </div>
+
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Guide Charges</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-guide-price">0.00</h6>
+                        </div>
+
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Count Days</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-countDays">Empty</h6>
+                        </div>
+
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Service Charge</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-Service-Charge">
+                                10%</h6>
+                        </div>
+
+
+                        <div class="topic-payment">
+                            <h6 style="font-weight: bolder;color: red; font-size: medium" class="selected-bar">
+                                Total </h6>
+                            <h6 style="font-weight: bolder;color: red; font-size: medium"
+                                class="selected-bar txt-totalPayment">00.00</h6>
+                        </div>
+                    </div>
+                    <div class="line-bar ">
+
+                    </div>
+                    <div>
+
+                        <button class="btn-Travel-conform btn-ConformTravel">Conform Travel</button>
+                        <button class="btn-total-conform btn-billGenerator">Total Payment</button>
+                    </div>
+
+                </section>
+                <!---->
+            </section>
+
+
+        </section>
+        <section class="atm-Card-Access">
+            <input class="form-control form-control-sm w-75" type="text" placeholder="Nic Number"
+                   aria-label=".form-control-sm example">
+            <span class="src-class">
+                  <input class="form-control form-control-sm w-50" type="text" placeholder="OTP"
+                         aria-label=".form-control-sm example">
+                  <input style="margin-left: 42px;" class="form-control form-control-sm w-50" type="text"
+                         placeholder="80127 XXXXX"
+                         aria-label=".form-control-sm example">
+            </span>
+            <span class="src-class">
+                <input class="form-control form-control-sm w-75" type="text" placeholder="Card Holder Number"
+                       aria-label=".form-control-sm example">
+                <button class="payment-btn">Pay</button>
+            </span>
+            <button class="btn-Booking-edit btn-Booking-onAction">Booking</button>
+        </section>
+    </section>
+    <footer class="nxt-travel-footer">
+        <!--===-->
+        <section class="child-footer">
+            <h2 class="footer-name">Next Travel pvt.ltd</h2>
+            <p class="footer-description">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Ad alias, aliquid culpa deleniti dignissimos
+                distinctio earum illo incidunt inventore itaque magnam nisi possimus quis,
+                sequi soluta
+                totam unde. Delectus eveniet ipsum natus rerum voluptas voluptatibus!</p>
+
+        </section>
+        <section class="child-footer">
+            <h6 class="discover-topic">Discover</h6>
+            <p class="footer-description discover-section">Travel</p>
+            <p class="footer-description discover-section">Hotel</p>
+            <p class="footer-description discover-section">Guide</p>
+            <p style="margin-left: 16px" class="footer-description discover-section">Booking</p>
+        </section>
+        <section class="child-footer">
+            <h6 class="discover-topic">Contacts</h6>
+            <p style="margin-left: 15px;" class="footer-description discover-section">www.nextTravel.lk</p>
+            <p class="footer-description discover-section">+94 741422467</p>
+            <p class="footer-description discover-section">+94 715807726</p>
+            <p style="margin-left: 76px;" class="footer-description discover-section">nextTravel001@gmail.com</p>
+        </section>
+        <section class="icon-class-footer">
+            <i class="fa-brands fa-facebook fa-beat fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-instagram fa-beat fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-google fa-beat fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-whatsapp fa-beat fa-xl" style="color: #ffffff;"></i>
+        </section>
+
+
+        <!--===-->
+    </footer>
+
+</main>
+
+
+<!--==================================-->
+<main id="superLuxury-category-id" class="regular-category">
+    <section class="up-section-category">
+        <h1>Super Luxury Category</h1>
+        <h6 class="up-section-child-two">Find Your Best Travel </h6>
+    </section>
+    <section class="row down-section-category">
+        <div style="width: 250px;color:#6F6F78" class="col-md-6">
+            <label class="m-1 text-sm-end top-label">Where are you going ? :</label>
+            <select class="form-select input-unique top-label hotel-location-Action"
+                    aria-label="Default select example">
+                <option selected>Open This Select Menu</option>
+                <option value="Kalutara">Kalutara</option>
+                <option value="Gale">Galle</option>
+                <option value="Colombo">Colombo</option>
+                <option value="NuwaraEliya">Nuwara Eliya</option>
+                <option value="Kandy">Kandy</option>
+                <option value="Anuradapura">Anuradapura</option>
+                <option value="Trinco">Trincomalee</option>
+            </select>
+            <button class="btn-hotel-style btn-hotel-OnAction">
+                <i class="fa fa-search"></i></button>
+        </div>
+
+
+        <div style="position: relative;left: 108px;color:#6F6F78" class="form-group col-md-6 w-25 ">
+            <label class="m-1 text-sm-end top-label">Pick Your Start Date :</label>
+            <input class="input-unique date-picker top-label date-startDay" type="date" name="birthday">
+
+        </div>
+        <div style="position: relative;left: 75px;color:#6F6F78" class="col w-25 ">
+            <label class="m-1 text-sm-end top-label">Pick Your End Date :</label>
+            <input class="input-unique date-picker top-label date-EndDay" type="date" id="date-EndDay" name="birthday">
+
+        </div>
+        <div style="position: relative;left: 93px;color:#6F6F78" class="col w-25 ">
+            <label class="m-1 text-sm-end top-label">No Child :</label>
+            <input style="width: 103px" type="number" class="input-unique form-control top-label txt-childCount"
+                   placeholder="00">
+
+        </div>
+        <div style="position: relative;left: 55px;color:#6F6F78" class="col w-25 ">
+            <label class="m-1 text-sm-end top-label">No Adult :</label>
+            <input style="width: 103px" type="number" class="input-unique form-control top-label txt-AdultCount"
+                   placeholder="00">
+
+        </div>
+
+        <section style="display: none" class="card-system-hotel hotel-card-parent">
+            <div class="card" style="width: 18rem;">
+                <img src="/registerUserSide/assets/img/regular.PNG" class="card-img-top" alt="...">
+                <div class="card-body card-body-all">
+                    <div class="hotel-card-body">
+                        <h5 class="card-title-hotel">Card Title</h5>
+                        <input type="checkbox" name="hotel1" value="#">
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">STAR RATE</h6>
+                        <p class="data-hotel-crd">3</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">CONTACT</h6>
+                        <p class="data-hotel-crd">+94 342225008</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PETS</h6>
+                        <p class="data-hotel-crd">Allow</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PAYMENT</h6>
+                        <p class="data-hotel-crd">10000 Per Day</p>
+                    </div>
+                </div>
+            </div>
+            <!--==============-->
+            <div class="card" style="width: 18rem;">
+                <img src="/registerUserSide/assets/img/regular.PNG" class="card-img-top" alt="...">
+                <div class="card-body card-body-all">
+                    <div class="hotel-card-body">
+                        <h5 class="card-title-hotel">Card Title</h5>
+                        <input type="checkbox" name="vehicle1" value="#">
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">STAR RATE</h6>
+                        <p class="data-hotel-crd">3</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">CONTACT</h6>
+                        <p class="data-hotel-crd">+94 342225008</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PETS</h6>
+                        <p class="data-hotel-crd">Allow</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PAYMENT</h6>
+                        <p class="data-hotel-crd">10000 Per Day</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/registerUserSide/assets/img/regular.PNG" class="card-img-top" alt="...">
+                <div class="card-body card-body-all">
+                    <div class="hotel-card-body">
+                        <h5 class="card-title-hotel">Card Title</h5>
+                        <input type="checkbox" name="vehicle1" value="#">
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">STAR RATE</h6>
+                        <p class="data-hotel-crd">3</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">CONTACT</h6>
+                        <p class="data-hotel-crd">+94 342225008</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PETS</h6>
+                        <p class="data-hotel-crd">Allow</p>
+                    </div>
+                    <div class="hotel-card-body">
+                        <h6 class="rate-hotel">PAYMENT</h6>
+                        <p class="data-hotel-crd">10000 Per Day</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="vehicle-section">
+            <h4 class="vehicle-topic">Select Your Vehicle</h4>
+            <section class="vehicle-section-flex">
+                <section class="scroll-section">
+                    <section class="parent-vhCard vehicle-card-parent"> <!--Id-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                        <!--=============-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                        <!--==========================-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                        <!--====================================-->
+                        <div class="vehicle-card-new">
+                            <img class="vehicle-image" src="/registerUserSide/assets/img/wgon.PNG" alt="wgon ar">
+                            <div class="vehicle-card-body">
+                                <h5 style="margin-right: 5px;margin-top: 2px;" class="card-title-hotel">Card Title</h5>
+                                <input type="checkbox" name="vehicle1" value="#">
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">SEAT CAPACITY</h5>
+                                <p class="data-hotel-crd">3</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">VEHICLES QTY</h5>
+                                <p class="data-hotel-crd">1</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FUEL TYPE</h5>
+                                <p class="data-hotel-crd">Petrol</p>
+                            </div>
+                            <div class="vehicle-card-body">
+                                <h5 style="margin: 0" class="rate-hotel">FEE ONE DAY</h5>
+                                <p class="data-hotel-crd">Rs.7000</p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <button class="guide-expand-btn btn-Guide-onAction">Do You Want A Guide</button>
+                <!---->
+                <div style="display: none" class="modal id01">
+
+                    <form class="modal-content animate">
+                        <div class="imgcontainer">
+                            <!--document.getElementsByClassName('id01').style.display='none'-->
+                            <span onclick="$('.id01').css('display','none')" class="close"
+                                  title="Close Modal"> &times;</span>
+                            <section class="guide-section">
+                                <!--==-->
+                                <section class="scroll-section-guide">
+                                    <section class="guide-cards-Parent">
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox"
+                                                       name="vehicle1" value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!----==================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--===================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--=============-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--============-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--=======================================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                        <!--========================================-->
+                                        <div class="guide-card">
+                                            <img src="/registerUserSide/assets/img/man.png"
+                                                 class="card-img-top card-image-guide" alt="img">
+
+                                            <div class="card-title-guide">
+                                                <h5 class="card-title-hotel">Guide Name</h5>
+                                                <input style="margin-bottom: 7px" type="checkbox" name="vehicle1"
+                                                       value="#">
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Address</h5>
+                                                <p class="data-hotel-crd">Colombo</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Guide Nic</h5>
+                                                <p class="data-hotel-crd">200208403044</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Contact</h5>
+                                                <p class="data-hotel-crd">0766771628</p>
+                                            </div>
+                                            <div class="vehicle-card-body">
+                                                <h5 style="margin: 0" class="rate-hotel">Payment</h5>
+                                                <p class="data-hotel-crd">Rs.2000/= per day</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                            </section>
+                        </div>
+                    </form>
+                </div>
+                <section class="payment-section">
+                    <div class="line-bar"></div>
+                    <div class="payment-area ">
+                        <div style="color: #0b0567; font-size: medium" class="topic-payment">
+                            <h6 style="font-weight: bolder" class="selected-bar">Your Selected </h6>
+                            <h6 style="font-weight: bolder" class="selected-bar">Amount</h6>
+                        </div>
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Hotel Charges</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-hotel-Price">0.00</h6>
+                        </div>
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Vehicle Charges</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-Vehicle-Price">
+                                0.00</h6>
+                        </div>
+
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Guide Charges</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-guide-price">0.00</h6>
+                        </div>
+
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Count Days</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-countDays">Empty</h6>
+                        </div>
+
+                        <div class="topic-payment">
+                            <h6 class="selected-bar">Service Charge</h6>
+                            <h6 style="font-weight: bold;color: #5f5f69" class="selected-bar txt-Service-Charge">
+                                10%</h6>
+                        </div>
+
+
+                        <div class="topic-payment">
+                            <h6 style="font-weight: bolder;color: red; font-size: medium" class="selected-bar">
+                                Total </h6>
+                            <h6 style="font-weight: bolder;color: red; font-size: medium"
+                                class="selected-bar txt-totalPayment">00.00</h6>
+                        </div>
+                    </div>
+                    <div class="line-bar ">
+
+                    </div>
+                    <div>
+
+                        <button class="btn-Travel-conform btn-ConformTravel">Conform Travel</button>
+                        <button class="btn-total-conform btn-billGenerator">Total Payment</button>
+                    </div>
+
+                </section>
+                <!---->
+            </section>
+
+
+        </section>
+        <section class="atm-Card-Access">
+            <input class="form-control form-control-sm w-75" type="text" placeholder="Nic Number"
+                   aria-label=".form-control-sm example">
+            <span class="src-class">
+                  <input class="form-control form-control-sm w-50" type="text" placeholder="OTP"
+                         aria-label=".form-control-sm example">
+                  <input style="margin-left: 42px;" class="form-control form-control-sm w-50" type="text"
+                         placeholder="80127 XXXXX"
+                         aria-label=".form-control-sm example">
+            </span>
+            <span class="src-class">
+                <input class="form-control form-control-sm w-75" type="text" placeholder="Card Holder Number"
+                       aria-label=".form-control-sm example">
+                <button class="payment-btn">Pay</button>
+            </span>
+            <button class="btn-Booking-edit btn-Booking-onAction">Booking</button>
+        </section>
+    </section>
+    <footer class="nxt-travel-footer">
+        <!--===-->
+        <section class="child-footer">
+            <h2 class="footer-name">Next Travel pvt.ltd</h2>
+            <p class="footer-description">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Ad alias, aliquid culpa deleniti dignissimos
+                distinctio earum illo incidunt inventore itaque magnam nisi possimus quis,
+                sequi soluta
+                totam unde. Delectus eveniet ipsum natus rerum voluptas voluptatibus!</p>
+
+        </section>
+        <section class="child-footer">
+            <h6 class="discover-topic">Discover</h6>
+            <p class="footer-description discover-section">Travel</p>
+            <p class="footer-description discover-section">Hotel</p>
+            <p class="footer-description discover-section">Guide</p>
+            <p style="margin-left: 16px" class="footer-description discover-section">Booking</p>
+        </section>
+        <section class="child-footer">
+            <h6 class="discover-topic">Contacts</h6>
+            <p style="margin-left: 15px;" class="footer-description discover-section">www.nextTravel.lk</p>
+            <p class="footer-description discover-section">+94 741422467</p>
+            <p class="footer-description discover-section">+94 715807726</p>
+            <p style="margin-left: 76px;" class="footer-description discover-section">nextTravel001@gmail.com</p>
+        </section>
+        <section class="icon-class-footer">
+            <i class="fa-brands fa-facebook fa-beat fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-instagram fa-beat fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-google fa-beat fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-whatsapp fa-beat fa-xl" style="color: #ffffff;"></i>
+        </section>
+
+
+        <!--===-->
+    </footer>
+
+</main>
+<!--===========================================================================Super Luxury Category-->
+
+
+<script src="../registerUserSide/assets/JQuery/jquery-3.6.4.min (1).js"></script>
+<script type="module" src="../registerUserSide/controller/HotelController.js"></script>
+<script type="module" src="../registerUserSide/controller/VehicleController.js"></script>
+<script type="module" src="../registerUserSide/controller/GuideController.js"></script>
+<script type="module" src="../registerUserSide/controller/TravelController.js"></script>
+<script type="module" src="../registerUserSide/controller/BookingController.js"></script>
+<script type="module" src="../registerUserSide/controller/PaymentCalculationController.js"></script>
+<script src="/registerUserSide/util/Function.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>

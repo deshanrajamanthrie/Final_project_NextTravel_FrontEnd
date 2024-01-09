@@ -31,3 +31,22 @@
     background-color: #146262;
     color: white;
 }
+
+.choose-file{
+    background-color: #146262;
+    color: white;
+    height: 29px;
+    width: 300px;
+    border-radius: 4px;
+}
+.btn-Upload-image{
+    position: relative;
+    width: 128px;
+    height: 40px;
+    top: 15px;
+    left: 6px;
+    border-radius: 4px;
+    background-color: rosybrown;
+    color: white;
+    border: 1px solid;
+}
